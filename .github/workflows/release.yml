@@ -1,0 +1,116 @@
+name: Build and Release APK
+
+on:
+  push:
+    tags:
+      - 'v*'  # Matches any tag starting with 'v'
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+    
+    - name: Cache Gradle packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+    
+    - name: Make gradlew executable
+      run: chmod +x gradlew
+    
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
+    
+    - name: Sign APK
+      uses: r0adkll/sign-android-release@v1
+      id: sign_app
+      with:
+        releaseDirectory: app/build/outputs/apk/release
+        signingKeyBase64: ${{ secrets.SIGNING_KEY_BASE64 }}
+        alias: ${{ secrets.ALIAS }}
+        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        keyPassword: ${{ secrets.KEY_PASSWORD }}
+      env:
+        BUILD_TOOLS_VERSION: "34.0.0"
+    
+    - name: Get version from tag
+      id: get_version
+      run: |
+        VERSION=${GITHUB_REF#refs/tags/}
+        echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+        echo "VERSION_NAME=${VERSION#v}" >> $GITHUB_OUTPUT
+    
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ steps.get_version.outputs.VERSION }}
+        release_name: "Release ${{ steps.get_version.outputs.VERSION }}"
+        draft: false
+        prerelease: false
+        body: |
+          ## 🎉 What's New in ${{ steps.get_version.outputs.VERSION_NAME }}
+          
+          ### ✨ New Features
+          - Add your new features here
+          
+          ### 🐛 Bug Fixes
+          - List your bug fixes here
+          
+          ### 🔧 Improvements
+          - Performance optimizations
+          - UI/UX improvements
+          
+          ### 📱 Installation
+          Download the APK below and install manually on your Android device.
+          
+          **Minimum Android Version:** 7.0 (API 24)
+          **Target Android Version:** 14 (API 34)
+          
+          ### 🔒 Security
+          This APK is signed with our official certificate. Verify the signature matches previous versions.
+          
+          ---
+          
+          **Release Notes:**
+          - Force Update: false
+          - Security Critical: false
+          - Minimum Version: 1.0.0
+    
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ steps.sign_app.outputs.signedReleaseFile }}
+        asset_name: MyApp-${{ steps.get_version.outputs.VERSION }}.apk
+        asset_content_type: application/vnd.android.package-archive
+    
+    - name: Notify Backend (Optional)
+      run: |
+        curl -X POST "https://your-backend-url.com/api/v1/update/webhook" \
+          -H "Content-Type: application/json" \
+          -d '{
+            "action": "release_created",
+            "tag_name": "${{ steps.get_version.outputs.VERSION }}",
+            "download_url": "https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.VERSION }}/MyApp-${{ steps.get_version.outputs.VERSION }}.apk"
+          }' || true
