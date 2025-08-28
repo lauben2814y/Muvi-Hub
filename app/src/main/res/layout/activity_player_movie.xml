@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainPlayerMovie">
+
+    <RelativeLayout
+        android:id="@+id/player_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="false"
+        android:visibility="visible">
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true"
+            android:visibility="visible"
+            app:resize_mode="fit"
+            app:use_controller="false" />
+
+        <!-- Buffering indicator -->
+        <FrameLayout
+            android:id="@+id/buffering_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/buffering_spinner"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@android:color/white"
+                    android:indeterminateTintMode="src_atop" />
+
+                <TextView
+                    android:id="@+id/buffering_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Loading..."
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+        <!-- Custom controls overlay -->
+        <RelativeLayout
+            android:id="@+id/controlsParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- player header -->
+            <LinearLayout
+                android:id="@+id/playerHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#80000000"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/close_player_button"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="8dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Close and quit player"
+                    android:padding="12dp"
+                    android:src="@drawable/arrow_back_24px" />
+
+                <TextView
+                    android:id="@+id/video_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Title"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <!-- bottom controls -->
+            <RelativeLayout
+                android:id="@+id/custom_controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <!-- Progress bar -->
+                <SeekBar
+                    android:id="@+id/seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Time indicators and controls -->
+                <RelativeLayout
+                    android:id="@+id/controlsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/seek_bar"
+                    android:orientation="horizontal">
+
+                    <!-- left controls -->
+                    <RelativeLayout
+                        android:id="@+id/leftControls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/position_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00:00" />
+
+
+                    </RelativeLayout>
+
+                    <!-- center controls -->
+                    <LinearLayout
+                        android:id="@+id/centerControls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageButton
+                            android:id="@+id/rewind_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_toLeftOf="@id/play_pause_button"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Toggle play and pause"
+                            android:src="@drawable/replay_10_24px" />
+
+                        <ImageButton
+                            android:id="@+id/prevBtn"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_toEndOf="@id/play_pause_button"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Toggle play and pause"
+                            android:src="@drawable/skip_previous_24px" />
+
+                        <ImageButton
+                            android:id="@+id/play_pause_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Toggle play and pause"
+                            android:src="@drawable/pause_24px" />
+
+                        <ImageButton
+                            android:id="@+id/nextBtn"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_toEndOf="@id/play_pause_button"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Toggle play and pause"
+                            android:src="@drawable/skip_next_24px" />
+
+                        <ImageButton
+                            android:id="@+id/forward_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/play_pause_button"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="Toggle play and pause"
+                            android:src="@drawable/forward_10_24px" />
+
+                    </LinearLayout>
+
+                    <!-- right controls -->
+                    <RelativeLayout
+                        android:id="@+id/rightControls"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/duration_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="00:00" />
+
+                        <ImageButton
+                            android:id="@+id/fullscreen_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/duration_text"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/toggle_full_screen"
+                            android:src="@drawable/fullscreen_24px" />
+
+                        <ImageButton
+                            android:id="@+id/rotate_button"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_toEndOf="@id/fullscreen_button"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:contentDescription="@string/rotate_player"
+                            android:src="@drawable/screen_rotation_alt_24px" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:id="@+id/morePosterContainer"
+        style="?attr/materialCardViewFilledStyle">
+
+        <ImageView
+            android:id="@+id/movieMorePoster"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/poster" />
+
+        <TextView
+            android:id="@+id/movieMorePosterVJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/md_theme_primary"
+            android:padding="2dp"
+            android:text="Vj Emmy"
+            android:textColor="@color/md_theme_onPrimary"
+            android:textSize="11sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/morePosterContainer"
+        android:padding="4dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/moreMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris Has Fallen"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/moreMovieReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2024-12-05"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

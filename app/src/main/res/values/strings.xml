@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Muvi Hub</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv shows</string>
+    <string name="downloads">Downloads</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="play">Play</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="preview">Preview</string>
+    <string name="tv">Tv</string>
+    <string name="collapsible_backdrop">Collapsible backdrop</string>
+    <string name="search_movies">Search movies…</string>
+    <string name="recently_uploaded">Recently Uploaded</string>
+    <string name="view_more">view more</string>
+    <string name="search_movies_here">Search movies…</string>
+    <string name="search_tvshows">Search tvshows…</string>
+    <string name="choose_download_option">Choose Download option</string>
+    <string name="download_part_1">Download Part 1</string>
+    <string name="download_part_2">Download Part 2</string>
+    <string name="download_non_translated">Download Non-Translated</string>
+    <string name="latest_trailers">Latest trailers</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="default_time_seek_no">0:00</string>
+    <string name="choose_stream_option">Choose stream option</string>
+    <string name="watch_part_1">Watch Part 1</string>
+    <string name="watch_part_2">Watch Part 2</string>
+    <string name="watch">Watch Non-Translated</string>
+    <string name="toggle_full_screen">Toggle Full screen</string>
+    <string name="rotate_player">Rotate player</string>
+    <string name="search_tv_shows">Search tv shows…</string>
+    <string name="filter_by_vj_s">Filter by Vj\'s</string>
+    <string name="filter_your_movies">Filter your Movies</string>
+    <string name="action_adventure"><![CDATA[Action & Adventure]]></string>
+    <string name="sci_fi_fantasy"><![CDATA[Sci-Fi & Fantasy]]></string>
+    <string name="lauren_2814z">Lauren 2814z</string>
+    <string name="laureen2814z_gmail_com">laureen2814z@gmail.com</string>
+    <string name="home">Home</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="content_description_start_icon">trailing icon description</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">User Email</string>
+    <string name="library">Library</string>
+    <string name="shorts">Shorts</string>
+    <string name="details_action_btn">Details action btn</string>
+    <string name="report">Report</string>
+    <string name="pause_and_play_short">Pause and play short</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="dislike_short_button">Dislike Short Button</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="join_community">Join Community</string>
+    <string name="recently_played_movies">Recently Played Movies</string>
+    <string name="recently_played_episodes">Recently Played Episodes</string>
+    <string name="login">Login</string>
+    <string name="comments">Comments</string>
+    <string name="share">Share</string>
+    <string name="this_is_sample_very_long_overview_possibly_for_some_movie_that_i_don_t_know_that_much">This is sample very long overview possibly for some movie that i don\'t know that much</string>
+    <string name="pirates_of_the_carribean">Pirates of the Carribean</string>
+    <string name="toggle_play_and_pause">Toggle play and pause</string>
+    <string name="download">Download</string>
+    <string name="search_vj">Search vj</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="add_profile_photo">Add Profile Photo</string>
+    <string name="profile">Shorts Profile</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <button class="button button-outline button-round filter-genre-btn" data-id="Action"
+        data-no="28">Action</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Adventure"
+        data-no="12">Adventure</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Animation"
+        data-no="16">Animation</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Comedy"
+        data-no="35">Comedy</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Crime"
+        data-no="80">Crime</button>
+    <button class="button button-outline button-round filter-genre-btn"
+        data-id="Science Fiction" data-no="878">Sci-Fi</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Romance"
+        data-no="10749">Romance</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Thriller"
+        data-no="53">Thriller</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Fantasy"
+        data-no="14">Fantasy</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Horror"
+        data-no="27">Horror</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="War"
+        data-no="10752">War</button>
+    <button class="button button-outline button-round filter-genre-btn" data-id="Mystery"
+        data-no="9648">Mystery</button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

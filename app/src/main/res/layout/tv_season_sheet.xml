@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:id="@+id/seasonBtnsSheet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vikings Seasons"
+        android:id="@+id/tvSeasonSheetTitle"
+        android:textSize="14sp"
+        android:layout_marginVertical="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSeasonSheetTitle"
+        android:id="@+id/tvSeasonBtnsRecycler" />
+
+</RelativeLayout>

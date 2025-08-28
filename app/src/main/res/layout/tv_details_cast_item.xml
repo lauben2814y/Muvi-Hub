@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:paddingVertical="8dp">
+
+    <ImageView
+        android:id="@+id/moreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/chevron_right_24px"
+        android:layout_alignParentEnd="true"
+        android:layout_marginVertical="2dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/profileTvContainer" >
+
+        <ImageView
+            android:id="@+id/tvCastProfile"
+            android:layout_width="85dp"
+            android:layout_height="110dp"
+            android:src="@drawable/poster"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_toEndOf="@id/profileTvContainer"
+        android:layout_centerVertical="true"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/tvCastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Johnny Depp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cpt. Jack Sparrow"
+            android:textSize="12sp"
+            android:id="@+id/tvCastAs"
+            android:layout_below="@id/tvCastName" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

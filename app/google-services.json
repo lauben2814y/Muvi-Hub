@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1081837361041",
+    "firebase_url": "https://movieapp-a6a2a-default-rtdb.firebaseio.com",
+    "project_id": "movieapp-a6a2a",
+    "storage_bucket": "movieapp-a6a2a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081837361041:android:0cce2bce33b97855f96c30",
+        "android_client_info": {
+          "package_name": "muvi.anime.hub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081837361041-j3jo2r0uscknpatuj42m2n79s35iuqfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "muvi.anime.hub",
+            "certificate_hash": "8f61c053a88092ae93cb9ab3fbb30c89e24fb2b4"
+          }
+        },
+        {
+          "client_id": "1081837361041-8qkkiioekk3f147io14fq1hn7rvl2phs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZKZjBa94_Q0wfh1kYILIpuXSCkDbIchc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081837361041-8qkkiioekk3f147io14fq1hn7rvl2phs.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1081837361041-ppc3g3te08gvbeg1p1u017d62d5ban0e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "muvi.anime.hub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

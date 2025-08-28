@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="115dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        android:id="@+id/moviePosterContainer"
+        style="?attr/materialCardViewFilledStyle">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:id="@+id/shimmer_poster"
+                android:background="@color/md_theme_background" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_alignTop="@id/carouselPosterShimmer"
+                android:layout_gravity="end"
+                android:background="@color/md_theme_onBackground" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moviePosterContainer">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/movieCastName"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/white_black"
+                android:layout_marginBottom="4dp"/>
+
+            <View
+                android:id="@+id/movieReleaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/white_black" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

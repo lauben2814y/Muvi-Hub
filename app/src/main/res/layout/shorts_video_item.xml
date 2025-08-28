@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/player_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:visibility="visible">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/shorts_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:resize_mode="fit"
+        app:use_controller="false" >
+
+    </androidx.media3.ui.PlayerView>
+
+    <ProgressBar
+        android:id="@+id/shorts_buffering_spinner"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/pause_play_btn"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/ripple_circular"
+        android:padding="4dp"
+        android:src="@drawable/pause_24px"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_above="@id/ad_placeholder"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:paddingEnd="5dp"
+            android:layout_toStartOf="@+id/linearLayout2"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/shorts_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:text="Pirates of the Carribean"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movie_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Hello there this is a dummy video description that goes to two lines and goes on to try and goes to the third lineand goes to try rach the fourth"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/position_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00" />
+
+                <TextView
+                    android:id="@+id/duration_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="00:00" />
+
+            </RelativeLayout>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:elevation="10dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/imvAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/like_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/like_btn"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/ripple_circular"
+                    android:padding="4dp"
+                    android:src="@drawable/favorite_24px" />
+
+                <TextView
+                    android:id="@+id/likes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:text="Like" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comments_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/comments_btn"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/ripple_circular"
+                    android:padding="4dp"
+                    android:src="@drawable/chat_bubble_24px" />
+
+                <TextView
+                    android:id="@+id/comment_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Comments"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/favorite_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/favorite_btn"
+                    android:layout_width="56dp"
+                    android:background="@drawable/ripple_circular"
+                    android:padding="4dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/bookmark_add_24px" />
+
+                <TextView
+                    android:id="@+id/favorites"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:text="Favorites" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/share_btn"
+                    android:layout_width="56dp"
+                    android:background="@drawable/ripple_circular"
+                    android:padding="4dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/share_24px" />
+
+                <TextView
+                    android:id="@+id/shares"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:text="Shares" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/ad_placeholder"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

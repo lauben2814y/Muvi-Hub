@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/testCardContainer"
+    style="?attr/materialCardViewFilledStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/moviesCarouselDetails"
+    android:layout_centerHorizontal="true"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="220dp"
+        android:orientation="vertical">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/carouselPosterShimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_theme_background" />
+
+                <View
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignTop="@id/carouselPosterShimmer"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/md_theme_onBackground" />
+
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

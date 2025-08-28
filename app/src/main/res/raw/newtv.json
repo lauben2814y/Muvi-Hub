@@ -1,0 +1,3017 @@
+{
+  "message": "Data fetched successfully for new tv shows",
+  "data": [
+    {
+      "name": "Empress Ki",
+      "poster_path": "/cH9PMmBkhtVMlCdi8fgvMqekNKi.jpg",
+      "first_air_date": "2013-10-28",
+      "id": 61148,
+      "seasons": [
+        {
+          "episode_count": 51,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/iaS12GeROVUQbBS7yUdUNmi7jwT.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1-2",
+              "overview": null,
+              "episode_number": "1-2",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%201-2.mp4"
+            },
+            {
+              "name": "Episode 3-4",
+              "overview": null,
+              "episode_number": "3-4",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%203-4.mp4"
+            },
+            {
+              "name": "Episode 5-6",
+              "overview": null,
+              "episode_number": "5-6",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%205-6.mp4"
+            },
+            {
+              "name": "Episode 7-8",
+              "overview": null,
+              "episode_number": "7-8",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%207-8.mp4"
+            },
+            {
+              "name": "Episode 9-10",
+              "overview": null,
+              "episode_number": "9-10",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%209-10.mp4"
+            },
+            {
+              "name": "Episode 11-12",
+              "overview": null,
+              "episode_number": "11-12",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2011-12.mp4"
+            },
+            {
+              "name": "Episode 13-14",
+              "overview": null,
+              "episode_number": "13-14",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2013-14.mp4"
+            },
+            {
+              "name": "Episode 13-14b",
+              "overview": null,
+              "episode_number": "13-14b",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2013-14b.mp4"
+            },
+            {
+              "name": "Episode 15-16",
+              "overview": null,
+              "episode_number": "15-16",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2015-16.mp4"
+            },
+            {
+              "name": "Episode 15-16b",
+              "overview": null,
+              "episode_number": "15-16b",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2015-16b.mp4"
+            },
+            {
+              "name": "Episode 17-18",
+              "overview": null,
+              "episode_number": "17-18",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2017-18.mp4"
+            },
+            {
+              "name": "Episode 17-18b",
+              "overview": null,
+              "episode_number": "17-18b",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2017-18b.mp4"
+            },
+            {
+              "name": "Episode 19-20",
+              "overview": null,
+              "episode_number": "19-20",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2019-20.mp4"
+            },
+            {
+              "name": "Episode 19-20b",
+              "overview": null,
+              "episode_number": "19-20b",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2019-20b.mp4"
+            },
+            {
+              "name": "Episode 21-22",
+              "overview": null,
+              "episode_number": "21-22",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/3MPR3SS%20KI%2021-22.mp4"
+            },
+            {
+              "name": "Episode 23-24",
+              "overview": null,
+              "episode_number": "23-24",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/3MPR3SS%20KI%2023-24.mp4"
+            },
+            {
+              "name": "Episode 25-26",
+              "overview": null,
+              "episode_number": "25-26",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/3MPR3SS%20KI%2025-26.mp4"
+            },
+            {
+              "name": "Episode 27-28",
+              "overview": null,
+              "episode_number": "27-28",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2027-28.mp4"
+            },
+            {
+              "name": "Episode 29-30",
+              "overview": null,
+              "episode_number": "29-30",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2029-30.mp4"
+            },
+            {
+              "name": "Episode 31-32",
+              "overview": null,
+              "episode_number": "31-32",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2031-32.mp4"
+            },
+            {
+              "name": "Episode 33-34",
+              "overview": null,
+              "episode_number": "33-34",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2033-34.mp4"
+            },
+            {
+              "name": "Episode 35-36",
+              "overview": null,
+              "episode_number": "35-36",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2035-36.mp4"
+            },
+            {
+              "name": "Episode 37-38",
+              "overview": null,
+              "episode_number": "37-38",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2037-38.mp4"
+            },
+            {
+              "name": "Episode 39-40",
+              "overview": null,
+              "episode_number": "39-40",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2039-40.mp4"
+            },
+            {
+              "name": "Episode 41-42",
+              "overview": null,
+              "episode_number": "41-42",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2041-42.mp4"
+            },
+            {
+              "name": "Episode 43-44",
+              "overview": null,
+              "episode_number": "43-44",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2043-44.mp4"
+            },
+            {
+              "name": "Episode 45-46",
+              "overview": null,
+              "episode_number": "45-46",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2045-46.mp4"
+            },
+            {
+              "name": "Episode 47-48",
+              "overview": null,
+              "episode_number": "47-48",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2047-48.mp4"
+            },
+            {
+              "name": "Episode 49-50",
+              "overview": null,
+              "episode_number": "49-50",
+              "runtime": null,
+              "still_path": "/pefCiIoIrWglxwpoqIdnhL0IlGZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/empresski/EMPRESS%20KI%2049-50.mp4"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-12-06T15:20:16.403188+00:00",
+      "vj": "Vj Shao Khan Lee",
+      "genres": [
+        "Drama",
+        "War & Politics"
+      ]
+    },
+    {
+      "name": "Merlin",
+      "poster_path": "/8eR5Jg7CxsuCOEBU5wW0opObxpi.jpg",
+      "first_air_date": "2008-09-20",
+      "id": 7225,
+      "seasons": [
+        {
+          "episode_count": 13,
+          "name": "Season 1",
+          "overview": "The mythical city of Camelot, in a time before history began, is a fantastical realm of legendary beasts and mysterious peoples. In this dangerous world, magic has been banned by the ruthless tyrant; Uther Pendragon. Merlin, a young man gifted with extraordinary magical powers, arrives at the gates of Camelot, sent by his mother to start a new life. Though bright-eyed with wonder, the young sorcerer quickly makes enemies, including the heir to Uther's crown, the headstrong Prince Arthur.",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/4nOJ20ysHgYEan6xGxJuRNVGJvh.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1-2",
+              "overview": null,
+              "episode_number": "1-2",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/marlin%201-2.mp4"
+            },
+            {
+              "name": "Episode 3-4",
+              "overview": null,
+              "episode_number": "3-4",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/marlin%203-4.mp4"
+            },
+            {
+              "name": "Episode 5-6",
+              "overview": null,
+              "episode_number": "5-6",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/marlin%205-6.mp4"
+            },
+            {
+              "name": "Episode 7-8",
+              "overview": null,
+              "episode_number": "7-8",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/marlin%207-8.mp4"
+            },
+            {
+              "name": "Episode 9-10",
+              "overview": null,
+              "episode_number": "9-10",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/marlin%209-10.mp4"
+            },
+            {
+              "name": "Episode 11-12",
+              "overview": null,
+              "episode_number": "11-12",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2011-12.mp4"
+            }
+          ]
+        },
+        {
+          "episode_count": 13,
+          "name": "Season 2",
+          "overview": "The second series of Merlin finds Camelot more vulnerable than ever to the dark forces of magic, forcing Merlin to make difficult decisions in order to protect Arthur, ensure the future king's survival and prevent the mythic kingdom from being destroyed.",
+          "season_number": 2,
+          "poster_path": "https://image.tmdb.org/t/p/w500/cxqD6Rt86GIl2mB1TMR8vKWtYYf.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1-2",
+              "overview": null,
+              "episode_number": "1-2",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2013-14.mp4"
+            },
+            {
+              "name": "Episode 3-4",
+              "overview": null,
+              "episode_number": "3-4",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2015-16.mp4"
+            },
+            {
+              "name": "Episode 5-6",
+              "overview": null,
+              "episode_number": "5-6",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2017-18.mp4"
+            },
+            {
+              "name": "Episode 7-8",
+              "overview": null,
+              "episode_number": "7-8",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2019-20.mp4"
+            },
+            {
+              "name": "Episode 9-10",
+              "overview": null,
+              "episode_number": "9-10",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2021-22.mp4"
+            },
+            {
+              "name": "Episode 11-12",
+              "overview": null,
+              "episode_number": "11-12",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2023-24.mp4"
+            }
+          ]
+        },
+        {
+          "episode_count": 13,
+          "name": "Season 3",
+          "overview": "Swords, sorcery and swashbuckling adventure return in the third series of Merlin, following our heroes as they face their greatest challenge yet. When misbegotten secrets are exposed and old friends choose new sides, they soon discover that the great battle for Camelot is only just beginning...",
+          "season_number": 3,
+          "poster_path": "https://image.tmdb.org/t/p/w500/sQ2pkdUW5Iobc2Zwhdsfd4W2C20.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1-2",
+              "overview": null,
+              "episode_number": "1-2",
+              "runtime": null,
+              "still_path": "/Ast1yAVp6shrWeC6KCtayWgZGcM.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/merlin%2025-26.mp4"
+            },
+            {
+              "name": "Goblin's Gold",
+              "overview": "When Merlin comes across a secret chamber, he accidentally releases a goblin. The mischievous little creature possesses Gaius, making the wise and renowned court physician turn into a shadow of his former self, quickly developing a taste for gold, ale and magical jokes. To make things worse, the king suddenly becomes bald and a nasty scourge of flatulence hits the royal household. Will Merlin be able to figure out the source of all troubles, return the gobblin back to where he came from and put an end to the havoc before any real damage is done?",
+              "episode_number": 3,
+              "runtime": 44,
+              "still_path": "/ieFskx3ZG1xXfpMTsGQZTcN9F55.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2027.mp4"
+            },
+            {
+              "name": "Gwaine",
+              "overview": "Merlin and Arthur find themselves outnumbered in a bar fight but an enigmatic young man helps them win. The man’s name is Gwaine and he risks his own life to protect Arthur but during his act of bravery he is seriously wounded. The Prince decides to take him back to Camelot where he could make a recovery with Gaius' help. Gwaine immediately gets to work: drinking, flirting with the ladies and causing lots of trouble for Merlin who has been instructed to look after him. However, when two unscrupulous knights seem to plot to murder the Prince, will Merlin and Gwaine be able to stop them and save Arthur?",
+              "episode_number": 4,
+              "runtime": 43,
+              "still_path": "/5hV65emPwEnUGiiu0JLIgNmJ1XV.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2028.mp4"
+            },
+            {
+              "name": "The Crystal Cave",
+              "overview": "After an unexpected meeting with the enigmatic old sorcerer Taliesin, the wizard takes Merlin to the crystal cave allowing him to witness a glimpse of the future. However, this gesture turns out to be more of a curse than a gift when, much to his horror, Merlin sees Morgana set to kill Uther. The young warlock knows he must do his best to try and stop the future from playing out. But changing the pages of destiny is a very dangerous game and his actions end up having fatal consequences. With the whole of Camelot in a state of grief, will Merlin be able to change the course of destiny and undo the damage he has caused, or will it be too late?",
+              "episode_number": 5,
+              "runtime": 44,
+              "still_path": "/tlJiPvbNCvLJS10QHgtJY58YUvq.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2029.mp4"
+            },
+            {
+              "name": "The Changeling",
+              "overview": "Uther pressures Arthur into an arranged marriage with a visiting princess, Elena, though Merlin soon has reservations after discovering that Elena may not exactly be who she claims to be. As he tries to uncover the princess' dark secret, he learns that Elena's nanny is a Pixie. But what are their motivations? Who do they work for? And most important of all, what benefit do they get from her marriage to Arthur, the heir to the throne of Camelot? Will Merlin be able to get to the bottom of it all and prevent Arthur from making the biggest mistake of his life?",
+              "episode_number": 6,
+              "runtime": 44,
+              "still_path": "/aegvSNBAUlzbNruZzBb7VN5ftxm.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2030.mp4"
+            },
+            {
+              "name": "The Castle of Fyrien",
+              "overview": "Gwen faces an impossible dilemma when she is forced to choose between saving the life of Elyan, her estranged brother and only sibling or Arthur's, Camelot's prince and the love of her life. When one of them is certain to find death at the hands of Cenred, who will Gwen choose?\n\nOnce again, loyalty, love and friendships are tested to the limit as Arthur, Merlin and Gwen are forced to put their minds together to try and find a way out of the cruel quandary. Morgana and Morgause, in turn, will do their best ruin their plans.\n\nWill good conquer evil or will Gwen end up losing someone she loves again?",
+              "episode_number": 7,
+              "runtime": 43,
+              "still_path": "/rW6ELBtTB6WnHLLGAcGcsRAgc5D.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2031.mp4"
+            },
+            {
+              "name": "The Eye of the Phoenix",
+              "overview": "Arthur embarks alone on a quest to prove himself worthy of the Camelot throne by retrieving the Golden Trident from the Fisher King.\n\nWith the Prince beyond the protection of the citadel, Morgana takes the opportunity to use her dark magic. She gives him a precious bracelet that contains a Phoenix Eye, insisting that he wears it at all times for protection. However, the magical jewel takes away Arthur's life force and he is left defenceless in the Fisher King's perilous realm.\n\nWith the help of Gwaine, will Merlin be able to reach Arthur in time and fulfil his own quest to protect the future king of Camelot?",
+              "episode_number": 8,
+              "runtime": 44,
+              "still_path": "/7hnPz8epPtQJCbZNhmGN5ZpjLTJ.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2032.mp4"
+            },
+            {
+              "name": "Love in the Time of Dragons",
+              "overview": "An old flame of Gaius' arrives in Camelot under the influence of a Manticore.",
+              "episode_number": 9,
+              "runtime": 43,
+              "still_path": "/6UY3iaRLGcyBFRgCMOATiRQngRt.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2033.mp4"
+            },
+            {
+              "name": "Queen of Hearts",
+              "overview": "When Uther banishes Gwen from the kingdom, Arthur resolves to leave Camelot with her.",
+              "episode_number": 10,
+              "runtime": 43,
+              "still_path": "/82KydUkgp5nRH57n33emy5Li1Hh.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2034.mp4"
+            },
+            {
+              "name": "The Sorcerer's Shadow",
+              "overview": "Camelot's legendary tournament only has one rule: there are no rules whatsoever. Terrifying warriors start to fill the mythical city, Gilli between them. Despite his small stature, Gilli is ready to join the action and committed to achieve victory with a secret weapon to help him: magic. When Gilli begins to realise the full extent of his powers, Merlin becomes torn since his new friend is putting his own life in danger as well as threatening the very heart of Camelot with his actions. Will Merlin be able to make Gilli see sense before it's too late?",
+              "episode_number": 11,
+              "runtime": 44,
+              "still_path": "/2QY30TGC7RLgglkxRxVieeEZaRR.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2035.mp4"
+            },
+            {
+              "name": "The Coming of Arthur (1)",
+              "overview": "Arthur and Merlin embark on a dangerous mission to capture the Cup of Life, a powerful magical artifact that carries the gift of immortality. However, before they are able to retrieve the Cup they fall prey to Jarl, an unscrupulous slave trader. They manage to escape when a trusted friend comes to their rescue but with Jarl's help, the Cup of Life ends up in Morgause's hands. Now that the dreadful sisters count on an immortal army at their disposal, will Morgause and Morgana overthrow Uther once and for all?",
+              "episode_number": 12,
+              "runtime": 43,
+              "still_path": "/vWCMlFINUQjhYIy13KVQhRGk3TM.jpg",
+              "season_number": 3,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2036.mp4"
+            }
+          ]
+        },
+        {
+          "episode_count": 13,
+          "name": "Season 4",
+          "overview": "Merlin is bac for a fourth series, with Camelot standing on the brink of a golden age. But its birth will not be an easy one, for the forces of evil are gathering and the darkest hour is just before the dawn...",
+          "season_number": 4,
+          "poster_path": "https://image.tmdb.org/t/p/w500/m9gMHA43TlgWlpOFOqWqmEc1CSZ.jpg",
+          "episodes": [
+            {
+              "name": "The Darkest Hour (1)",
+              "overview": "Evil sorceress Morgana summons mighty gatekeeper the Cailleach, who opens a door to another world from which hellish creatures pour forth. As Arthur and his loyal knights take up arms, Merlin discovers the only thing that will stop them is an unimaginable sacrifice.",
+              "episode_number": 1,
+              "runtime": 44,
+              "still_path": "/vLaPOpqeVuBZYsyd00Z6RJh9SJI.jpg",
+              "season_number": 4,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2037.mp4"
+            },
+            {
+              "name": "The Darkest Hour (2)",
+              "overview": "The kingdom is on the brink of collapse and Morgana poised to strike, in the final part of this opening episode of the fantasy drama. As Lancelot races back to Camelot with the dying Merlin, Arthur must continue on his mission to vanquish the Dorocha without them. Though the Knights know their journey to the Isle of the Blessed is fraught with danger, none could anticipate the sacrifice Arthur intends to make there.\n\nFriendship and loyalty are tested to the limit, but in the end, it's the power of love that changes all their lives for ever.",
+              "episode_number": 2,
+              "runtime": 43,
+              "still_path": "/twOMtdxg51DkaFpIHkRtoADpeBB.jpg",
+              "season_number": 4,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2038.mp4"
+            },
+            {
+              "name": "The Wicked Day",
+              "overview": "The mighty citadel is buzzing in anticipation of the Prince's birthday celebrations, as the fantasy drama continues. But Arthur's old adversary, Odin, promises to ensure this is one party Camelot will never forget - for among the assembling guests lurks a deadly assassin set to strike.\n\nAs the dust settles, Camelot is left devastated. Just how far is Merlin prepared to go to put things right; would he really risk everything and reveal his secret?",
+              "episode_number": 3,
+              "runtime": 44,
+              "still_path": "/otHwxigI68fuU3feNMlYn9tjkR8.jpg",
+              "season_number": 4,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/second/afteer/merlin/MERLIN%2039.mp4"
+            }
+          ]
+        },
+        {
+          "air_date": "2012-10-06",
+          "episode_count": 13,
+          "id": 61395,
+          "name": "Season 5",
+          "overview": "The epic fifth and final series of Merlin sees Camelot at the height of its golden age. With Queen Guinevere and the Knights of the Round Table at his side, Arthur has never felt stronger.\n\nBut even as Camelot flowers, the seeds of her destruction are being sown... As the forces of darkness gather, only Merlin stands between Arthur and a fate that has been written since the dawn of time...",
+          "poster_path": "/8IakbsQB0FOjT1Vm0jc5wBomb2U.jpg",
+          "season_number": 5,
+          "vote_average": 7
+        }
+      ],
+      "created_at": "2024-12-03T11:26:51.515139+00:00",
+      "vj": "Vj ICEP",
+      "genres": [
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ]
+    },
+    {
+      "name": "Iss Pyaar Ko Kya Naam Doon?",
+      "poster_path": "/bAHnfeAz4yF3SpZdVSOVMUEjMSP.jpg",
+      "first_air_date": "2011-06-06",
+      "id": 39390,
+      "seasons": [
+        {
+          "episode_count": 238,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500null",
+          "episodes": [
+            {
+              "name": "Payal's wedding preparations",
+              "overview": "Payal's wedding preparations are under way. She is worried about the dowry her fiance's parents are demanding. Arnav buys a family home. Khushi tumbles into his arms, while walking the ramp. How will they handle the demand for dowry?",
+              "episode_number": 1,
+              "runtime": 30,
+              "still_path": "/yT2mb7CmCffhEKuKMGglTtfzDPJ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%201.mp4"
+            },
+            {
+              "name": "Drama at Payal's wedding",
+              "overview": "Arnav accuses Khushi of deliberately disrupting the show. Khushi pleads innocence. Meanwhile, Payal's wedding is stopped. Khushi comes home to find everybody angry. She tries to sort out the misunderstandings, but blames herself for Payal's wedding disaster.",
+              "episode_number": 2,
+              "runtime": 25,
+              "still_path": "/iFnh6Uo36jX4N0K4cK9YjKKcElF.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%202%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "The family visits a holy shrine",
+              "overview": "Khushi tries to deal with her guilt by preparing sweets. Their friends comfort them. Khushi and her family decide to visit a holy shrine. Arnav is on his way there as well. How does the meeting between Khushi and Arnav go?",
+              "episode_number": 3,
+              "runtime": 26,
+              "still_path": "/xCUUMG6WZrj4qDUIkdA3JeePESk.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%203%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Embarassing coverage of Khushi",
+              "overview": "Garima and Khushi have an emotional connect. Madhumati is shocked to see the footage on TV where Khushi is seen in Arnav’s arms. Khushi breaks down when the media channels broadcast the footage.",
+              "episode_number": 4,
+              "runtime": 26,
+              "still_path": "/gJBO9UKa6MOvSdXJrk9sLHmVBN3.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%204%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi reaches Arnav's office",
+              "overview": "Khushi is deeply disturbed and embarrassed. Garima leads her away from such attention. Khushi is bullied by a rowdy gang. She is rescued in time by Shyam. Desperate to know the truth, Khushi and Payal go to Arnav’s office.",
+              "episode_number": 5,
+              "runtime": 26,
+              "still_path": "/hT8Od3HUDIABApVZLtJyCIsBXkp.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%205.mp4"
+            },
+            {
+              "name": "Khushi crashes into Arnav again",
+              "overview": "Khushi, Payal and Buaji reach Delhi and are thrilled by the pace of the city. In a hurry to get Buaji’s medicines, Khushi hits Arnav’s car by accident. Arnav is shocked to see Khushi in Delhi. Khushi and Payal are happy to find Shyam in the city.",
+              "episode_number": 6,
+              "runtime": 21,
+              "still_path": "/q8tBT9fjTLPuvU4QRQn89hnY2uO.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%206.mp4"
+            },
+            {
+              "name": "Arnav asks Khushi to pay",
+              "overview": "Arnav is not happy to do a puja, despite Anjali asking him to do it. Khushi cannot believe that Arnav is making her pay for the damage to his car. Khushi and Payal run into Shyam at the marketplace.",
+              "episode_number": 7,
+              "runtime": 21,
+              "still_path": "/ckVKO4qbLjQWPn3xxHo9cZzjvRI.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%207.mp4"
+            },
+            {
+              "name": "Khushi in Arnav's house",
+              "overview": "Anjali is delighted with the designer saris that Khushi shows her. Khushi, mistakenly, leaves the saris in Arnav’s room. He is puzzled. Nani is irritated with Manorama.",
+              "episode_number": 8,
+              "runtime": 21,
+              "still_path": "/1Nw25RpduDf95aaWVlD52piq6Vl.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%208.mp4"
+            },
+            {
+              "name": "Khushi dreams of taking revenge",
+              "overview": "Anjali places an order for 200 saris to Khushi. But Manorama threatens to cancel the order. Manorama is not happy that Naniji has ordered her to attend a function. Khushi is still seething from being humiliated by Arnav. She dreams of taking revenge. She asks Shyam to help her get a job.",
+              "episode_number": 9,
+              "runtime": 21,
+              "still_path": "/z1arPqFaq9m3oMFOKpJtcJFWa1U.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%209.mp4"
+            },
+            {
+              "name": "Khushi and her job",
+              "overview": "Khushi without informing Madhumita meets Shyam and by coincidence Madhumita reaches the same market. Manorama is excited after Arnav gifts her jewellery.",
+              "episode_number": 10,
+              "runtime": 20,
+              "still_path": "/sPAlqrBJVrCuBl6f1pNXXV4AISQ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2010.mp4"
+            },
+            {
+              "name": "Enter Lavanya Kashyap",
+              "overview": "Buaji refuses to let Khushi work for a living. Khushi informs her father about the job offer and manages to get his permission to work. Anjali and Arnav talk about a mysterious Lavanya Kashyap. Naniji overhears their conversation and is very curious.",
+              "episode_number": 11,
+              "runtime": 21,
+              "still_path": "/9WExyTuTXEP2jwHAVOkdSKOMZOK.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2011%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi in a new world",
+              "overview": "Khushi feels completely out of place when she goes to meet Lavanya Kashyap at office. She is surprised at the Western clothes everybody is wearing there. Lavanya fires her new assistant, Sonia. Will Khushi do well in this office?",
+              "episode_number": 12,
+              "runtime": 21,
+              "still_path": "/jCNXlZrN0N80h9WjPv8ZkdwyQMl.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2012%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Naniji acts suspiciously",
+              "overview": "Khushi is appointed as Lavanya’s new assistant. Her colleagues make fun of her for her Indian attire. Anjali tells Arnav that Lavanya has sent him a bouquet. Naniji behaves rather suspiciously. She searches for something in Arnav’s room. Manorama reports this suspicious behaviour to Anjali.",
+              "episode_number": 13,
+              "runtime": 19,
+              "still_path": "/mLhYyWj8irN51nNo1r8k5ALWKuv.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2013%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi creates ruckus in office",
+              "overview": "Khushi creates ruckus in office when she lights God's lamp and it starts off the fire alarm and sprinklers. Arnav is furious to see Khushi in the parking lot and they end up arguing with each other. Later, Khushi feels humiliated when Arnav tears her dupatta.",
+              "episode_number": 14,
+              "runtime": 21,
+              "still_path": "/mntjEu4Cgrw8jmKnoqONA5UXNmU.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2014%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi meets Arnav - the boss",
+              "overview": "Lavanya scolds Khushi for not taking her work seriously. Arnav and Khushi are stunned to see each other in the office. Khushi realises that Arnav is her boss and she is working in his company.",
+              "episode_number": 15,
+              "runtime": 21,
+              "still_path": "/w8hSww1i4sPhq7LRcp2yIzz1pXw.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2015%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Lavanya fires Khushi",
+              "overview": "Arnav is surprised to know that Khushi has got a job in his company. Khushi is stunned when Lavanya fires her. Arnav and Lavanya are furious when Khushi barges into their meeting. All are shocked when Khushi declares that she will not leave the job as she knows she is right.",
+              "episode_number": 16,
+              "runtime": 20,
+              "still_path": "/exAUtawnOs1wNRensBZBvkVjVH3.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2016%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Payal worries about Khushi's safety",
+              "overview": "Khushi signs Arnav’s contract, but she is unhappy about her job. Payal is worried about this, too. Akash buys a dupatta that Payal was eyeing in the market. Is he falling for her? How long will Khushi survive in the office?",
+              "episode_number": 17,
+              "runtime": 21,
+              "still_path": "/aHotlYSuvjaHJKCX9tm6uVJWivf.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2017%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Shyam comes home",
+              "overview": "Khushi gets the job of measuring male models. Arnav is sarcastic when she refuses to do it. She then finds a way of doing the task. Manorama and Anjali catch Akash holding a dupatta.Buaji announces that Shyam is moving in with them. How will Shyam fit in?",
+              "episode_number": 18,
+              "runtime": 21,
+              "still_path": "/vfcJYbu9HyNlwgcgU5Kj29mOrTh.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2018.mp4"
+            },
+            {
+              "name": "Arnav and Khushi at work",
+              "overview": "Manorama discusses with Anjali about Arnav’s wedding. Arnav sees the footage of Khushi setting off the fire alarms with her lamp lighting ritual. The whole office seems to be keeping track of the events that take place between Arnav and Khushi.",
+              "episode_number": 19,
+              "runtime": 21,
+              "still_path": "/6ZBIBZNzVqtTD8ngjf6qAiEwCB2.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2019%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi breezes through work",
+              "overview": "Khushi completes all the tasks assigned to her. Arnav and Lavanya are amazed. All of them are shocked about Shyam living in the house. Khushi wants to leave office early. She wants to plan her sister Payal’s birthday party. But Arnav wants to spoil this plan.",
+              "episode_number": 20,
+              "runtime": 21,
+              "still_path": "/5SNXdmy39DSpLeXbA1Fx8U3ASUi.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2020%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi and the coat",
+              "overview": "Arnav overloads Khushi with work. It does not seem like she will make it to Payal’s birthday party. Akash praises Anjali. This makes Manorama jealous. Nani is also irate that Manorama is a slacker when it comes to housework.",
+              "episode_number": 21,
+              "runtime": 20,
+              "still_path": "/8iHmNU583JbOM81p1m12EcUgUcr.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2021%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi is the new model",
+              "overview": "Arnav asks Khushi to take part in a fashion shoot when the original model storms out. Khushi baulks at wearing revealing clothes and chooses to turn up in a sari instead. Even as Lavanya ridicules Khushi for doing so, Akash supports her.",
+              "episode_number": 22,
+              "runtime": 21,
+              "still_path": "/aS3WadUO5p3SQqZC5wkMuccjidn.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2022%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi needs a break",
+              "overview": "Akash consoles Khushi. Arnav is heartless towards her. He orders Khushi to park a client’s car. Nani is touched to see Manorama consoling Anjali, because she is upset about her husband’s delay. Arnav sees Khushi working in the rain.",
+              "episode_number": 23,
+              "runtime": 21,
+              "still_path": "/aEpIlExnjd4o2zlrWAnd3SPmC2x.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2023%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Arnav confused about Khushi",
+              "overview": "Arnav leaps to rescue Khushi from a speeding car. He is confused about his feelings for her. Akash drops Khushi at home. He realises that Payal is Khushi’s sister. He gifts the dupatta to Payal.",
+              "episode_number": 24,
+              "runtime": 21,
+              "still_path": "/vM6l8lMk6qsJGGqdF6vJ8i6jK4C.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2024%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi works at home too",
+              "overview": "Payal knows that the dupatta is Akash’s gift. Arnav burdens Khushi with work he wants her to finish at home. She completes it and submits the reports on time. Why is Arnav being so hard on Khushi?",
+              "episode_number": 25,
+              "runtime": 21,
+              "still_path": "/9ghkRzSpb3IxQLpXiR4ifOZ5Ag6.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2025.mp4"
+            },
+            {
+              "name": "Khushi is trapped",
+              "overview": "Arnav is enraged as he gets to know that Khushi spoke about his relationship with Lavanya to Nani and sends her to work at his guest house. Khushi reaches the guest house while Mr.Sinha decides that the building is in a bad condition and may collapse any moment.",
+              "episode_number": 26,
+              "runtime": 36,
+              "still_path": "/k76Ux6nxU7eBytfAh9Lq6EA4Ijt.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2026%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Arnav rescues Khushi",
+              "overview": "Arnav rushes to the guesthouse when he is told that Khushi has not reached home. He is horrified when he realises that Khushi is trapped in the building. He rescues her, but Khushi accuses him of trying to kill her. Will she quit the job?",
+              "episode_number": 27,
+              "runtime": 21,
+              "still_path": "/w83plVAZnWiymU1lt7zEqwvX8Qm.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2027%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Arnav drops Khushi home",
+              "overview": "Arnav feels bad as he knows he has hurt Khushi unknowingly. As Khushi faints, Arnav decides to drop her home. Payal and Buaji are stunned to see Arnav getting an unconscious Khushi home. They hold Arnav responsible for Khushi’s condition. Arnav feels guilty seeing Khushi unconscious.",
+              "episode_number": 28,
+              "runtime": 20,
+              "still_path": "/zivpvL0yZiqrijXNIyv6p65lr3m.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2028%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Arnav thinks of Khushi",
+              "overview": "Payal is anxious when Khushi remains unconscious for long. Anjali is alarmed when she sees Arnav's injured hand. Arnav refuses to discuss about Lavanya with Naniji. Khushi regains her consciousness and wonders how she came home.",
+              "episode_number": 29,
+              "runtime": 20,
+              "still_path": "/oYzgxgKwI6EaMeHszzg7x0bjSAM.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2029%20%28GM%20TV%29.mp4"
+            },
+            {
+              "name": "Khushi considers going back",
+              "overview": "Anjali asks Arnav to be honest with himself. She asks him to stop bothering Khushi. Nani is keen on getting Arnav married and brings him a marriage proposal. Payal thinks that Khushi should go back to Lucknow. Will she go back?",
+              "episode_number": 30,
+              "runtime": 21,
+              "still_path": "/yRrqJSByL8bTgPEGnNsRxa7p34r.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next%20level/STRANGE/STRANGE%20LOVE%20EPISODE%2030%20%28GM%20TV%29.mp4"
+            }
+          ]
+        },
+        {
+          "air_date": "2011-08-05",
+          "episode_count": 28,
+          "id": 164574,
+          "name": "Season 2",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 2,
+          "vote_average": 0
+        },
+        {
+          "air_date": "2011-09-13",
+          "episode_count": 44,
+          "id": 164575,
+          "name": "Season 3",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 3,
+          "vote_average": 0
+        },
+        {
+          "air_date": "2011-11-11",
+          "episode_count": 24,
+          "id": 164576,
+          "name": "Season 4",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 4,
+          "vote_average": 0
+        },
+        {
+          "air_date": "2011-12-14",
+          "episode_count": 42,
+          "id": 164577,
+          "name": "Season 5",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 5,
+          "vote_average": 0
+        },
+        {
+          "air_date": null,
+          "episode_count": 47,
+          "id": 164578,
+          "name": "Season 6",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 6,
+          "vote_average": 0
+        },
+        {
+          "air_date": null,
+          "episode_count": 57,
+          "id": 164579,
+          "name": "Season 7",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 7,
+          "vote_average": 0
+        },
+        {
+          "air_date": null,
+          "episode_count": 32,
+          "id": 164580,
+          "name": "Season 8",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 8,
+          "vote_average": 0
+        },
+        {
+          "air_date": null,
+          "episode_count": 33,
+          "id": 164581,
+          "name": "Season 9",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 9,
+          "vote_average": 0
+        },
+        {
+          "air_date": null,
+          "episode_count": 32,
+          "id": 164582,
+          "name": "Season 10",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 10,
+          "vote_average": 0
+        },
+        {
+          "air_date": null,
+          "episode_count": 12,
+          "id": 164583,
+          "name": "Season 11",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 11,
+          "vote_average": 0
+        },
+        {
+          "air_date": "2015-11-24",
+          "episode_count": 9,
+          "id": 164584,
+          "name": "Season 12",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 12,
+          "vote_average": 0
+        }
+      ],
+      "created_at": "2024-12-02T16:33:28.379023+00:00",
+      "vj": "Vj MK",
+      "genres": [
+        "Drama",
+        "Family"
+      ]
+    },
+    {
+      "name": "The Boys",
+      "poster_path": "/2zmTngn1tYC1AvfnrFLhxeD82hz.jpg",
+      "first_air_date": "2019-07-25",
+      "id": 76479,
+      "seasons": [
+        {
+          "episode_count": 8,
+          "name": "Season 1",
+          "overview": "The story takes place in a universe where most of the superpowered individuals are recognized as superheroes, but in reality abuse their powers for personal gain, information the public is kept unaware of.",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/iikrapejulhIvbNgUjj468mUE0I.jpg",
+          "episodes": [
+            {
+              "name": "The Name of the Game",
+              "overview": "When a Supe kills the love of his life, A/V salesman Hughie Campbell teams up with Billy Butcher, a vigilante hell-bent on punishing corrupt Supes — and Hughie’s life will never be the same again.",
+              "episode_number": 1,
+              "runtime": 62,
+              "still_path": "/83vFYTHtCqWwaDtZluSU8bmnFYG.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%201.mp4"
+            },
+            {
+              "name": "Cherry",
+              "overview": "The Boys get themselves a Superhero, Starlight gets payback, Homelander gets naughty, and a Senator gets naughtier.",
+              "episode_number": 2,
+              "runtime": 61,
+              "still_path": "/1XzqWHBFvddrO2sazXzaCTtFEeA.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%202.mp4"
+            },
+            {
+              "name": "Get Some",
+              "overview": "It’s the race of the century. A-Train versus Shockwave, vying for the title of World’s Fastest Man. Meanwhile, the Boys are reunited and it feels so good.",
+              "episode_number": 3,
+              "runtime": 58,
+              "still_path": "/mF7TK7LMbWhlLz1Q5M1662TiKvP.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%20%203.mp4"
+            },
+            {
+              "name": "The Female of the Species",
+              "overview": "On a very special episode of The Boys… an hour of guts, gutterballs, airplane hijackings, madness, ghosts, and one very intriguing Female. Oh, and lots of heart — both in the sentimental sense, and in the gory literal sense.",
+              "episode_number": 4,
+              "runtime": 59,
+              "still_path": "/4wq1ZX7GYEFhSttQoTFJ4WyqV22.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%204.mp4"
+            },
+            {
+              "name": "Good for the Soul",
+              "overview": "The Boys head to the “Believe” Expo to follow a promising lead in their ongoing war against the Supes. There might — MIGHT — be a homicidal infant, but you’ll have to see for yourself.",
+              "episode_number": 5,
+              "runtime": 63,
+              "still_path": "/1ST4xchcR2s1JQUV23ryOBVrWbN.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%205.mp4"
+            },
+            {
+              "name": "The Innocents",
+              "overview": "SUPER IN AMERICA (2019). Vought Studios. Genre: Reality. Starring: Homelander, Queen Maeve, Black Noir, The Deep, A-Train, Starlight, Tara Reid, Billy Zane.",
+              "episode_number": 6,
+              "runtime": 62,
+              "still_path": "/pqz0Xvf7gpXwagUoaHxBqmyv6D5.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%206.mp4"
+            },
+            {
+              "name": "The Self-Preservation Society",
+              "overview": "Never trust a washed-up Supe — the Boys learn this lesson the hard way. Meanwhile, Homelander digs into his past, Starlight discovers that love hurts, and if you’re ever in Sandusky, Ohio and a girl asks if she can touch your gills, say NO.",
+              "episode_number": 7,
+              "runtime": 59,
+              "still_path": "/cx7dCZVzCX9pAyC6zE6lC6jkuyF.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%207.mp4"
+            },
+            {
+              "name": "You Found Me",
+              "overview": "Season Finale Time! Questions answered! Secrets revealed! Conflicts… conflicted! Characters exploded! And so much more!",
+              "episode_number": 8,
+              "runtime": 69,
+              "still_path": "/vNYs1oSMXa1V3KKWLPvtOy6UQWC.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%208.mp4"
+            }
+          ]
+        },
+        {
+          "episode_count": 8,
+          "name": "Season 2",
+          "overview": "The even more intense, more insane season two finds The Boys on the run from the law, hunted by the Supes, and desperately trying to regroup and fight back against Vought. In hiding, Hughie, Mother’s Milk, Frenchie and Kimiko try to adjust to a new normal, with Butcher nowhere to be found. Meanwhile, Starlight must navigate her place in The Seven as Homelander sets his sights on taking complete control. His power is threatened with the addition of Stormfront, a social media-savvy new Supe, who has an agenda of her own. On top of that, the Supervillain threat takes center stage and makes waves as Vought seeks to capitalize on the nation’s paranoia.",
+          "season_number": 2,
+          "poster_path": "https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg",
+          "episodes": [
+            {
+              "name": "The Big Ride",
+              "overview": "Season 2! New and improved! Now with 50% more explosive decapitations, terrorists, S&M hookers, cults, and a new pine fresh scent! But wait, there’s more! 2X MORE blood, guts and gore than the other leading brands! This exclusive offer is available only on Amazon Prime Video! Don’t delay! Order now!",
+              "episode_number": 1,
+              "runtime": 65,
+              "still_path": "/iqdh1aITkP4BicsZmQLQ7MDMo1z.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%209.mp4"
+            },
+            {
+              "name": "Proper Preparation and Planning",
+              "overview": "The Boys get themselves a Super Terrorist, Starlight gets evidence against Vought, The Deep gets in touch with his feelings, and Homelander gets himself a family (sort of).  All that, and a hard-hitting exposé on why Super Suits don’t have pockets.",
+              "episode_number": 2,
+              "runtime": 62,
+              "still_path": "/m6LSiAimRiST07sC0vsUDITojT3.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%2010.mp4"
+            },
+            {
+              "name": "Over the Hill with the Swords of a Thousand Men",
+              "overview": "Attention: If you or a loved one were exposed to Compound V, you may be entitled to financial compensation. Vought has given the drug to multiple victims, without their knowledge or consent. If you believe that you or a loved one were administered Compound V, call the law firm of Bremmer & Bremmer at 1-888-177-2774 for a free legal consultation. Know your rights!",
+              "episode_number": 3,
+              "runtime": 61,
+              "still_path": "/k3LtS7Xj2qXlJz00lFIfBPpmjgD.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%2011.mp4"
+            },
+            {
+              "name": "Nothing Like It in the World",
+              "overview": "Road trip! The Boys head to North Carolina to follow a lead on a mysterious Supe named Liberty. And did you know a person’s choice of candy bars might tell you if they’re a serial killer? Watch and learn the warning signs! This episode could save your life!",
+              "episode_number": 4,
+              "runtime": 70,
+              "still_path": "/6cAdAEomp2I0JwSYNcobAB1NIdm.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%2012.mp4"
+            },
+            {
+              "name": "We Gotta Go Now",
+              "overview": "VoughtStudios is pleased to announce that filming has begun on #DawnOfTheSeven. 12 years of VCU movies have led to this. If you like movies about One Hero, you’ll love a movie about Seven Heroes. Introducing newest member @RealStormfront! See how the legend began! In theaters Summer 2021!",
+              "episode_number": 5,
+              "runtime": 63,
+              "still_path": "/pn5adU2bTuMvBUZoEx2qDmSS8dv.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%2013.mp4"
+            },
+            {
+              "name": "The Bloody Doors Off",
+              "overview": "The Sage Grove Center® is dedicated to caring for those struggling with mental illness. Our compassionate doctors and counselors provide personalized services to help patients live their best lives. If you or a loved one need help, call the Sage Grove Center today at 1-800-122-8585. A proud subsidiary of Global Wellness Services®, which is a proud subsidiary of Vought International®",
+              "episode_number": 6,
+              "runtime": 66,
+              "still_path": "/5ZTRa0V3QFYX2ridnY9wh0FsvId.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%2014.mp4"
+            },
+            {
+              "name": "Butcher, Baker, Candlestick Maker",
+              "overview": "Congresswoman Victoria Neuman’s sham Congressional Hearing against Vought takes place in 3 DAYS. Are we going to let her criminalize Superheroes when we need them most? We have to stand up against such blatant partisan politics. Please join fellow Patriotic Americans and send $20 to VOUGHTPROMISE.COM to tell Neuman and her Kangaroo Court Cronies that they won’t win, “Not On Our Watch”™.",
+              "episode_number": 7,
+              "runtime": 56,
+              "still_path": "/8OJpTYvdGaTkzxU9oZnx0TaTaOt.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/see%20we%202/the%20boys/the%20boys%2016.mp4"
+            }
+          ]
+        },
+        {
+          "air_date": "2022-06-02",
+          "episode_count": 8,
+          "id": 215686,
+          "name": "Season 3",
+          "overview": "It’s been a year of calm. Homelander’s subdued. Butcher works for the government, supervised by Hughie of all people. But both men itch to turn this peace and quiet into blood and bone. So when The Boys learn of a mysterious Anti-Supe weapon, it sends them crashing into the Seven, starting a war, and chasing the legend of the first Superhero: Soldier Boy.",
+          "poster_path": "/7Ns6tO3aYjppI5bFhyYZurOYGBT.jpg",
+          "season_number": 3,
+          "vote_average": 7.9
+        },
+        {
+          "air_date": "2024-06-13",
+          "episode_count": 8,
+          "id": 305753,
+          "name": "Season 4",
+          "overview": "The world is on the brink. Victoria Neuman is closer than ever to the Oval Office and under Homelander's muscly thumb as he consolidates his power. Butcher, with only months to live, has lost Becca's son, and his job as The Boys' leader. The rest of the team are fed up with his lies. With the stakes higher than ever, they must find a way to work together and save the world before it's too late.",
+          "poster_path": "/nWwhdt7iOFJsWM8Lz1UtaUC6EUf.jpg",
+          "season_number": 4,
+          "vote_average": 7.3
+        },
+        {
+          "air_date": null,
+          "episode_count": 1,
+          "id": 393831,
+          "name": "Season 5",
+          "overview": "",
+          "poster_path": null,
+          "season_number": 5,
+          "vote_average": 0
+        }
+      ],
+      "created_at": "2024-11-28T19:01:34.454362+00:00",
+      "vj": "Vj Jeff",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ]
+    },
+    {
+      "name": "Gen V",
+      "poster_path": "/uuot1N5AgZ7xRCKgm4ZCwOhgIJu.jpg",
+      "first_air_date": "2023-09-28",
+      "id": 205715,
+      "seasons": [
+        {
+          "episode_count": 8,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/uuot1N5AgZ7xRCKgm4ZCwOhgIJu.jpg",
+          "episodes": [
+            {
+              "name": "God U.",
+              "overview": "Congratulations! You have been chosen for admission to Godolkin University! We're thrilled to be a part of your journey to discovering what kind of super you are! Since its founding in 1965, God U has produced some of the best and brightest superheroes the world has ever known, including three members of The Seven! And who knows? Maybe you'll be next!",
+              "episode_number": 1,
+              "runtime": 59,
+              "still_path": "/tzWMqlYUprbPSSdcsg9cea2p4oI.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://kaguje.xyz/KAGUJE/1ST%20OFF%20OCTOBER/SINGLESSS/34567/GOBLIN/GEN%20V%201.mkv"
+            },
+            {
+              "name": "First Day",
+              "overview": "The Godolkin University Mental Health Hotline would like to remind students at this difficult time that you are not alone. You might be bulletproof on the outside, but you're not on the inside. Our caring staff is trained to deal with the specific emotional needs of superheroes and they're here to help you. If you need to talk to someone, help is just a phone call or vMessage away. #GodUCares",
+              "episode_number": 2,
+              "runtime": 49,
+              "still_path": "/jZI9jDanZtpUVXvMvMhwM2SsTA8.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://kaguje.xyz/KAGUJE/1ST%20OFF%20OCTOBER/SINGLESSS/34567/GOBLIN/Gen%20V%202.mkv"
+            },
+            {
+              "name": "#ThinkBrink",
+              "overview": "You're invited to the #ThinkBrink Memorial Gala and Fundraiser tonight at Godolkin University! Make sure to dress your best when the doors open at 7PM and you hit the red carpet! Then join the world's hottest superheroes and celebrities for selfies and complimentary champagne, and enjoy a touching tribute video to the legendary Professor Brinkerhoff, featuring A-Train, The Deep, and Polarity!",
+              "episode_number": 3,
+              "runtime": 52,
+              "still_path": "/b6DkuAT76n7kCWFVaEQgBTzOGIT.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://kaguje.xyz/KAGUJE/1ST%20OFF%20OCTOBER/SINGLESSS/20-10-23/Gen%20V%203.ThinkBrink.720p.%20EMMY.mp4"
+            },
+            {
+              "name": "The Whole Truth",
+              "overview": "The Godolkin University Police Department is seeking any information on the person or persons who violated the Polarity statue in the groin/genital area last night outside the School of Crimefighting. If you have any information, please contact @GodUPD.",
+              "episode_number": 4,
+              "runtime": 47,
+              "still_path": "/iQ3kqALdrEGM0kd2eepLfOQO6ve.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://kaguje.xyz/KAGUJE/1ST%20OFF%20OCTOBER/SINGLESSS/20-10-23/Gen%20V%204.The.Whole.Truth.720p%20EMMY.mp4"
+            },
+            {
+              "name": "Welcome to the Monster Club",
+              "overview": "REWARD! Last night, The Incredible Steve attended an off-campus party where his penis was lost. He just wants it back, so his family is offering a $10,000 REWARD for its safe return, no questions asked. Please contact the Godolkin Daily Classifieds Office or the Lost-and-Found Desk at the Godolkin Student Union.",
+              "episode_number": 5,
+              "runtime": 41,
+              "still_path": "/t43wgdzZGwtpjKPx1VYPuEIr7Yz.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "http://munoserver45.club/Ona48/onn/Gen%20v%205-6.mp4"
+            },
+            {
+              "name": "Jumanji",
+              "overview": "The Godolkin University School of Crimefighting is excited to announce its newest course offering: THE PSYCHOLOGY OF SUPERVILLAINS! By studying the most well-known example of a supervillain, Soldier Boy, the course will investigate what makes a superhero go bad, from their flawed origin story, to the vices and moral compromises that lead them astray! Space is limited! Sign up today!",
+              "episode_number": 6,
+              "runtime": 41,
+              "still_path": "/tv1AG7Q6nPLGvsrwD6eGEUmhI8s.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "http://munoserver45.club/Ona48/onn/Gen%20v%205-6.mp4"
+            },
+            {
+              "name": "Sick",
+              "overview": "Calling all God U #Hometeamers! Today we’re protesting Socialist Victoria Neuman’s town hall on campus! Let’s show Neuman and her Supe-hating woke mob that we won’t put up with their anti-Superhero agenda! THEY WILL NOT CONTROL US! #MakeAmericaSuperAgain #SupeLivesMatter",
+              "episode_number": 7,
+              "runtime": 49,
+              "still_path": "/t5WpmjtkPa2ZuOMHckIl3hjs9pm.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "http://munoserver45.club/Ona48/onn/Gen%20v-7-8.mp4"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-11-28T18:55:01.740834+00:00",
+      "vj": "Vj Emmy",
+      "genres": [
+        "Action & Adventure",
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ]
+    },
+    {
+      "name": "The Day of the Jackal",
+      "poster_path": "/4hSnGq014MGdxCOMWBwyvKoDjrF.jpg",
+      "first_air_date": "2024-11-07",
+      "id": 222766,
+      "seasons": [
+        {
+          "episode_count": 10,
+          "name": "Series 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/7JXRPUz9cavaouE92L5ksrwClL2.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1",
+              "overview": "When an elite assassin carries out a kill, it catches the attention of an intelligence officer, who starts to hunt him down.",
+              "episode_number": 1,
+              "runtime": 56,
+              "still_path": "/rdGGo715ODZCbQaZDHmp6bdcPs.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01E01.mkv"
+            },
+            {
+              "name": "Episode 2",
+              "overview": "With his client backing out of payment, the Jackal's reputation is on the line, and he starts to plot his revenge.",
+              "episode_number": 2,
+              "runtime": 52,
+              "still_path": "/6Kdz5Lqdo1tqsooY2GfqUXWm8ya.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01E02.mkv"
+            },
+            {
+              "name": "Episode 3",
+              "overview": "Armed with the knowledge of his wayward client's identity, the Jackal tracks him down in Munich, determined to settle the score.",
+              "episode_number": 3,
+              "runtime": 50,
+              "still_path": "/33YJ3WckO3gKoSltkCCuNiy6YDW.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01E03.mkv"
+            },
+            {
+              "name": "Episode 4",
+              "overview": "His vengeance fulfilled, the Jackal flees Munich and tries to quell Nuria's suspicions. Bianca follows a new lead in her hunt.",
+              "episode_number": 4,
+              "runtime": 49,
+              "still_path": "/8ShIRqY8aJn21VsTrfpYRdoMTkb.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01E04.mkv"
+            },
+            {
+              "name": "Episode 5",
+              "overview": "The Jackal visits Norman with a special commission... but with Bianca also tracking Norman down, she is starting to close in on him.",
+              "episode_number": 5,
+              "runtime": 49,
+              "still_path": "/sNX8Y5Ql0nXMZYsSrMFGwAS5KWe.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01E05.mkv"
+            },
+            {
+              "name": "Episode 6",
+              "overview": "Following his shootout with Bianca, the Jackal must escape his captors and regroup ahead of his next hit, as Bianca follows his trail.",
+              "episode_number": 6,
+              "runtime": 50,
+              "still_path": "/kChxZzHUeIO14bAMhMkKwkDSxUx.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01E06%20JR.mkv"
+            },
+            {
+              "name": "Episode 7",
+              "overview": "The Jackal and Bianca head to Tallinn ahead of UDC's announcement. The Jackal must use all his wiles as he prepares to take his shot.",
+              "episode_number": 7,
+              "runtime": 46,
+              "still_path": "/pkgu7YVfLraWy8d6algqZOLZ1bg.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://storage.kawogomovies.site/NOVEMBER/DAY%20OF%20JACKAL/THE%20DAY%20OF%20THE%20JACKAL%20S01%20E07.mkv"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-11-28T16:32:27.583334+00:00",
+      "vj": "Vj Junior",
+      "genres": [
+        "Drama",
+        "Action & Adventure",
+        "Mystery"
+      ]
+    },
+    {
+      "name": "See",
+      "poster_path": "/lKDIhc9FQibDiBQ57n3ELfZCyZg.jpg",
+      "first_air_date": "2019-11-01",
+      "id": 80752,
+      "seasons": [
+        {
+          "episode_count": 8,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/g3JsScc7mQCfc3e5e5rXwu7xVVP.jpg",
+          "episodes": [
+            {
+              "name": "Godflame",
+              "overview": "A journey of survival begins when an army of Witchfinders attacks the village of Alkenny.",
+              "episode_number": 1,
+              "runtime": 57,
+              "still_path": "/sXMYCIALBMYTrimBeJqcqpmpeuB.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%201%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "Message in a Bottle",
+              "overview": "A special gift for the twins sparks tension in the group.",
+              "episode_number": 2,
+              "runtime": 56,
+              "still_path": "/jnBZ9eY01nzNAWPf691UySZVcI0.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%202%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "Fresh Blood",
+              "overview": "The twins struggle to keep a secret from their mother.",
+              "episode_number": 3,
+              "runtime": 50,
+              "still_path": "/3Mq2p5o2DR5VbNiVOOqqU0nf1X2.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%203%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "The River",
+              "overview": "An attack on the village leads to sacrifice and new challenges.",
+              "episode_number": 4,
+              "runtime": 52,
+              "still_path": "/A5Lqm0M3UJFPjyUNXfVhYQRnooI.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%204%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "Plastic",
+              "overview": "As Tamacti Jun’s army nears Baba and family, Maghra’s past comes to light.",
+              "episode_number": 5,
+              "runtime": 51,
+              "still_path": "/oYkGfl1ulpm0e6gps8uvLub2Ky1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%205%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "Silk",
+              "overview": "Baba and family are betrayed. Queen Kane uses her cunning to face a new conflict.",
+              "episode_number": 6,
+              "runtime": 54,
+              "still_path": "/4G7UsI5SdNXgv4OTWQQ83JBSfD9.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%206%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "The Lavender Road",
+              "overview": "The Witchfinder searches for his queen with Maghra and Boots. Haniwa, Kofun and others are nearing Jerlamarel.",
+              "episode_number": 7,
+              "runtime": 49,
+              "still_path": "/6fTXWzWPU8uqljCbKhF1J5qdWHU.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%207%20by%20Vj%20Junior.mp4"
+            },
+            {
+              "name": "House of Enlightenment",
+              "overview": "The twins meet Jerlamarel and finally discover the truth.",
+              "episode_number": 8,
+              "runtime": 55,
+              "still_path": "/1yqnFbSZskNfIpqULdjmA2ruxzR.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/project/see/See%208%20by%20Vj%20Junior.mp4"
+            }
+          ]
+        },
+        {
+          "episode_count": 8,
+          "name": "Season 2",
+          "overview": "Baba Voss is fighting to reunite his torn-apart family and get away from the war and politics that surround him, but the more he moves away, the deeper he gets sucked in, and the emergence of his nemesis brother threatens his family even more.",
+          "season_number": 2,
+          "poster_path": "https://image.tmdb.org/t/p/w500/A6dnHWe8YYcoFBHzP7T6WPP4b6F.jpg",
+          "episodes": [
+            {
+              "name": "Brothers and Sisters",
+              "overview": "Baba ventures into hostile territory in search of Haniwa. Queen Kane consecrates a new Payan capital and makes a surprising announcement.",
+              "episode_number": 1,
+              "runtime": 62,
+              "still_path": "/AeY8Oj7n0amXU5DKFIcyVbH9bW2.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next/see%20season%20two/see%201.mp4"
+            },
+            {
+              "name": "Forever",
+              "overview": "An old enemy comes face-to-face with Baba. Jerlamarel struggles to accept a life without sight.",
+              "episode_number": 2,
+              "runtime": 60,
+              "still_path": "/d3SfstpFPRJjD0mb8osLKKYVQ1T.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next/see%20season%20two/see%202.mp4"
+            },
+            {
+              "name": "The Compass",
+              "overview": "Edo’s leadership is called into question. Baba and Haniwa meet a secret tribe of warriors known as The Compass.",
+              "episode_number": 3,
+              "runtime": 54,
+              "still_path": "/8nfqRoYnWATomOwQFkeJT9p9kxx.jpg",
+              "season_number": 2,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/next/see%20season%20two/see%203.mp4"
+            }
+          ]
+        },
+        {
+          "air_date": "2022-08-25",
+          "episode_count": 8,
+          "id": 299043,
+          "name": "Season 3",
+          "overview": "Almost a year has passed since Baba Voss defeated his nemesis brother Edo and bid farewell to his family to live remotely in the forest. But when a Trivantian scientist develops a new and devastating form of sighted weaponry that threatens the future of humanity, Baba returns to Paya in order to protect his tribe once more.",
+          "poster_path": "/eKuHP97omMYK4HPCOPzVTHjoNEM.jpg",
+          "season_number": 3,
+          "vote_average": 7.2
+        }
+      ],
+      "created_at": "2024-11-25T11:01:45.484717+00:00",
+      "vj": "Vj Junior",
+      "genres": [
+        "Drama",
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ]
+    },
+    {
+      "name": "Ancient Love Poetry",
+      "poster_path": "/dF4waBOWABTMSZ11IICfs3GwvM3.jpg",
+      "first_air_date": "2021-06-17",
+      "id": 102777,
+      "seasons": [
+        {
+          "episode_count": 49,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/tnHrz103zCOGEW4nqvpJGv0CD5r.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1",
+              "overview": "",
+              "episode_number": 1,
+              "runtime": 45,
+              "still_path": "/srX1B9OUZ8gBHVxJKJ8HPLPB6ZK.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%201.mp4"
+            },
+            {
+              "name": "Episode 2",
+              "overview": "",
+              "episode_number": 2,
+              "runtime": 45,
+              "still_path": "/7iB2LT14IvCE4azEUMyCXcUbo52.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%202.mp4"
+            },
+            {
+              "name": "Episode 3",
+              "overview": "",
+              "episode_number": 3,
+              "runtime": 44,
+              "still_path": "/t39siZHzH9DYGAb9egTBj0l485L.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%203.mp4"
+            },
+            {
+              "name": "Episode 4",
+              "overview": "",
+              "episode_number": 4,
+              "runtime": 44,
+              "still_path": "/heEUaHktytfsv4WxY5POrXqNOXR.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%204.mp4"
+            },
+            {
+              "name": "Episode 5",
+              "overview": "",
+              "episode_number": 5,
+              "runtime": 44,
+              "still_path": "/624hOsjbJlueMSfdol5ASWg0qFJ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%205.mp4"
+            },
+            {
+              "name": "Episode 6",
+              "overview": "",
+              "episode_number": 6,
+              "runtime": 44,
+              "still_path": "/jmkPwP5NQs4PL1WFrX2CjeLWvqp.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%206.mp4"
+            },
+            {
+              "name": "Episode 7",
+              "overview": "",
+              "episode_number": 7,
+              "runtime": 44,
+              "still_path": "/8enKkbRIkrEd3hjS7sM5CFTDNc.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%207.mp4"
+            },
+            {
+              "name": "Episode 8",
+              "overview": "",
+              "episode_number": 8,
+              "runtime": 44,
+              "still_path": "/Y13yFbgJrIbYYhEp9PMBL8nC8Q.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%208.mp4"
+            },
+            {
+              "name": "Episode 9",
+              "overview": "",
+              "episode_number": 9,
+              "runtime": 44,
+              "still_path": "/mlRuPqGMklWnsD9mdJoXbqVuLeh.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%209.mp4"
+            },
+            {
+              "name": "Episode 10",
+              "overview": "",
+              "episode_number": 10,
+              "runtime": 45,
+              "still_path": "/6O4bPsOt31PyyP0a3PaPHYgLtoH.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%2010.mp4"
+            },
+            {
+              "name": "Episode 11",
+              "overview": "",
+              "episode_number": 11,
+              "runtime": 44,
+              "still_path": "/3Pjjf9VL4U6SVZzBPLFnMVsJetl.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%2011.mp4"
+            },
+            {
+              "name": "Episode 12",
+              "overview": "",
+              "episode_number": 12,
+              "runtime": 44,
+              "still_path": "/fQlbYBB7BczsIFf4c5HMRcZSFVR.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/ancient%20love%2012.mp4"
+            },
+            {
+              "name": "Episode 13",
+              "overview": "",
+              "episode_number": 13,
+              "runtime": 44,
+              "still_path": "/11FhTqzR5HzbGDyXUANpW4Pd3b7.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2013.mp4"
+            },
+            {
+              "name": "Episode 14",
+              "overview": "",
+              "episode_number": 14,
+              "runtime": 44,
+              "still_path": "/vs3SktNABtwqRvGughYLfV0XFds.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2014.mp4"
+            },
+            {
+              "name": "Episode 15",
+              "overview": "",
+              "episode_number": 15,
+              "runtime": 44,
+              "still_path": "/rL79rOVciIAIPYvoEZZhRt2Qftg.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2015.mp4"
+            },
+            {
+              "name": "Episode 16",
+              "overview": "",
+              "episode_number": 16,
+              "runtime": 41,
+              "still_path": "/grLyeWYkAn9ELSK95BWKWbZJLH.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2016.mp4"
+            },
+            {
+              "name": "Episode 17",
+              "overview": "",
+              "episode_number": 17,
+              "runtime": 43,
+              "still_path": "/w9uZpDP76MDBLmM4WM3Wuly00Yn.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2017.mp4"
+            },
+            {
+              "name": "Episode 18",
+              "overview": "",
+              "episode_number": 18,
+              "runtime": 44,
+              "still_path": "/ubtp3ADTg1b26QgHTGorZ5agaxK.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2018.mp4"
+            },
+            {
+              "name": "Episode 19",
+              "overview": "",
+              "episode_number": 19,
+              "runtime": 44,
+              "still_path": "/wMtWuu4tuVIxmDe6Twd3rryMPlb.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2019.mp4"
+            },
+            {
+              "name": "Episode 20",
+              "overview": "",
+              "episode_number": 20,
+              "runtime": 44,
+              "still_path": "/dh8kLUXDfOEuw55gb1IFwKtXwbe.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2020.mp4"
+            },
+            {
+              "name": "Episode 21",
+              "overview": "",
+              "episode_number": 21,
+              "runtime": 44,
+              "still_path": "/iyXpWXHst7pqgOoMi5jQyC3Vnt0.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2021.mp4"
+            },
+            {
+              "name": "Episode 22",
+              "overview": "",
+              "episode_number": 22,
+              "runtime": 43,
+              "still_path": "/ahtUn41rya96uYJPbpuS9KakwuD.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2022.mp4"
+            },
+            {
+              "name": "Episode 23",
+              "overview": "",
+              "episode_number": 23,
+              "runtime": 43,
+              "still_path": "/zcevrVV8k9rXQSeQyZI2hVI01MV.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2023.mp4"
+            },
+            {
+              "name": "Episode 24",
+              "overview": "",
+              "episode_number": 24,
+              "runtime": 44,
+              "still_path": "/aH3wmzw5kMh57SbonC1ACxorAKD.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2024.mp4"
+            },
+            {
+              "name": "Episode 25",
+              "overview": "",
+              "episode_number": 25,
+              "runtime": 44,
+              "still_path": "/nLqjjVNPF1et1HS79EC1AGLjJ4S.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2025.mp4"
+            },
+            {
+              "name": "Episode 26",
+              "overview": "",
+              "episode_number": 26,
+              "runtime": 44,
+              "still_path": "/qef9KiXh2pnA5pEZHyni2pjzk5R.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2026.mp4"
+            },
+            {
+              "name": "Episode 27",
+              "overview": "",
+              "episode_number": 27,
+              "runtime": 43,
+              "still_path": "/un1EshWZdvRmL0NmBTFh7uEGOmy.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2027.mp4"
+            },
+            {
+              "name": "Episode 28",
+              "overview": "",
+              "episode_number": 28,
+              "runtime": 44,
+              "still_path": "/fZTkko7uCRA55RSTGY6qSG8riLB.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2028.mp4"
+            },
+            {
+              "name": "Episode 29",
+              "overview": "",
+              "episode_number": 29,
+              "runtime": 44,
+              "still_path": "/4TywawULloqQeH2vxAENvrhtqdy.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2029.mp4"
+            },
+            {
+              "name": "Episode 30",
+              "overview": "",
+              "episode_number": 30,
+              "runtime": 43,
+              "still_path": "/zt2racsirvx9EbbnyNnCjhdpmq7.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2030.mp4"
+            },
+            {
+              "name": "Episode 31",
+              "overview": "",
+              "episode_number": 31,
+              "runtime": 43,
+              "still_path": "/wgqkGyskjJ6WRBDjtsv6xbnYqgg.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2031.mp4"
+            },
+            {
+              "name": "Episode 32",
+              "overview": "",
+              "episode_number": 32,
+              "runtime": 43,
+              "still_path": "/ngtZNmdH4Jp6t75NS8nYyTZvAVN.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2032.mp4"
+            },
+            {
+              "name": "Episode 33",
+              "overview": "",
+              "episode_number": 33,
+              "runtime": 44,
+              "still_path": "/kY18PIGJWdFRbjCSvSTeB8IugJE.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2033.mp4"
+            },
+            {
+              "name": "Episode 34",
+              "overview": "",
+              "episode_number": 34,
+              "runtime": 43,
+              "still_path": "/yYybdVgYciQCIYGyegMzp5kUGxG.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2034.mp4"
+            },
+            {
+              "name": "Episode 35",
+              "overview": "",
+              "episode_number": 35,
+              "runtime": 43,
+              "still_path": "/yQkQYE5XGKwDMlBrVcxnnYZBKCi.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2035.mp4"
+            },
+            {
+              "name": "Episode 36",
+              "overview": "",
+              "episode_number": 36,
+              "runtime": 44,
+              "still_path": "/gFMePnMcfLE8OkkFQ0jcHyhlbv2.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2036.mp4"
+            },
+            {
+              "name": "Episode 37",
+              "overview": "",
+              "episode_number": 37,
+              "runtime": 44,
+              "still_path": "/eXUQvhUzpeRhFuimQsAWPZK3aP4.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2037.mp4"
+            },
+            {
+              "name": "Episode 38",
+              "overview": "",
+              "episode_number": 38,
+              "runtime": 44,
+              "still_path": "/9d5AXkIIuF8cJCogn3Qq4sRk0WP.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2038.mp4"
+            },
+            {
+              "name": "Episode 39",
+              "overview": "",
+              "episode_number": 39,
+              "runtime": 44,
+              "still_path": "/kWecHJNrk4I9dBKRlPmJIqxtLu4.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2039.mp4"
+            },
+            {
+              "name": "Episode 40",
+              "overview": "",
+              "episode_number": 40,
+              "runtime": 44,
+              "still_path": "/8hod6ERZ2Fyx5BmYPvULGgE0XgI.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2040.mp4"
+            },
+            {
+              "name": "Episode 41",
+              "overview": "",
+              "episode_number": 41,
+              "runtime": 44,
+              "still_path": "/1IuuHrTGFKd29Z5lzcMK6OlauSj.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2041.mp4"
+            },
+            {
+              "name": "Episode 42",
+              "overview": "",
+              "episode_number": 42,
+              "runtime": 43,
+              "still_path": "/3rpoXh4BEcWJF0mqqeVZdollu26.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2042.mp4"
+            },
+            {
+              "name": "Episode 43",
+              "overview": "",
+              "episode_number": 43,
+              "runtime": 44,
+              "still_path": "/xnfns3rZB11PbmzB2E6mze4Kf2j.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2043.mp4"
+            },
+            {
+              "name": "Episode 44",
+              "overview": "",
+              "episode_number": 44,
+              "runtime": 44,
+              "still_path": "/jhwejRjvj3LuNkOHRHthDYAc6Y5.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ANCIENT%20LOVE%20POETRY/Ancient%20Love%20Poetry%20%2044.mp4"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-11-25T10:32:14.414012+00:00",
+      "vj": "Vj Hd",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ]
+    },
+    {
+      "name": "Gloria",
+      "poster_path": "/nnCma0e35LNC066hneSvDqZXuvX.jpg",
+      "first_air_date": "2010-07-31",
+      "id": 44330,
+      "seasons": [
+        {
+          "episode_count": 50,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500null",
+          "episodes": [
+            {
+              "name": "Gloria Episode 1",
+              "overview": "",
+              "episode_number": 1,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%281%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 2",
+              "overview": "",
+              "episode_number": 2,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%282%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 3",
+              "overview": "",
+              "episode_number": 3,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%283%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 4",
+              "overview": "",
+              "episode_number": 4,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%284%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 5",
+              "overview": "",
+              "episode_number": 5,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%285%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 6",
+              "overview": "",
+              "episode_number": 6,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%286%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 7",
+              "overview": "",
+              "episode_number": 7,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%287%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 8",
+              "overview": "",
+              "episode_number": 8,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%288%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 9",
+              "overview": "",
+              "episode_number": 9,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%289%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 10",
+              "overview": "",
+              "episode_number": 10,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2810%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 11",
+              "overview": "",
+              "episode_number": 11,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2811%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 12",
+              "overview": "",
+              "episode_number": 12,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2812%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 13",
+              "overview": "",
+              "episode_number": 13,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2813%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 14",
+              "overview": "",
+              "episode_number": 14,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2814%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 15",
+              "overview": "",
+              "episode_number": 15,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2815%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 16",
+              "overview": "",
+              "episode_number": 16,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2816%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 17",
+              "overview": "",
+              "episode_number": 17,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2817%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 18",
+              "overview": "",
+              "episode_number": 18,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2818%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 19",
+              "overview": "",
+              "episode_number": 19,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2819%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 20",
+              "overview": "",
+              "episode_number": 20,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2820%29%20-VJ%20Sammy.mkv"
+            },
+            {
+              "name": "Gloria Episode 21",
+              "overview": "",
+              "episode_number": 21,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2821%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 22",
+              "overview": "",
+              "episode_number": 22,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2822%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 23",
+              "overview": "",
+              "episode_number": 23,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2823%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 24",
+              "overview": "",
+              "episode_number": 24,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2824%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 25",
+              "overview": "",
+              "episode_number": 25,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2825%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 26",
+              "overview": "",
+              "episode_number": 26,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2826%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 27",
+              "overview": "",
+              "episode_number": 27,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2827%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 28",
+              "overview": "",
+              "episode_number": 28,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2828%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 29",
+              "overview": "",
+              "episode_number": 29,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2829%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 30",
+              "overview": "",
+              "episode_number": 30,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2830%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 31",
+              "overview": "",
+              "episode_number": 31,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2831%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 32",
+              "overview": "",
+              "episode_number": 32,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2832%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 33",
+              "overview": "",
+              "episode_number": 33,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2833%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 34",
+              "overview": "",
+              "episode_number": 34,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2834%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 35",
+              "overview": "",
+              "episode_number": 35,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2835%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 36",
+              "overview": "",
+              "episode_number": 36,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2836%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 37",
+              "overview": "",
+              "episode_number": 37,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2837%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 38",
+              "overview": "",
+              "episode_number": 38,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2838%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 39",
+              "overview": "",
+              "episode_number": 39,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2839%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 40",
+              "overview": "",
+              "episode_number": 40,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2840%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 41",
+              "overview": "",
+              "episode_number": 41,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2841%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 42",
+              "overview": "",
+              "episode_number": 42,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2842%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 43",
+              "overview": "",
+              "episode_number": 43,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2843%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 44",
+              "overview": "",
+              "episode_number": 44,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2844%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 45",
+              "overview": "",
+              "episode_number": 45,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2845%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 46",
+              "overview": "",
+              "episode_number": 46,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2846%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 47",
+              "overview": "",
+              "episode_number": 47,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2847%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 48",
+              "overview": "",
+              "episode_number": 48,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2848%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 49",
+              "overview": "",
+              "episode_number": 49,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2849%29%20-VJ%20Sammy.mp4"
+            },
+            {
+              "name": "Gloria Episode 50",
+              "overview": "",
+              "episode_number": 50,
+              "runtime": 60,
+              "still_path": "/n8ux6J7QzdLsxVkMpj1YtK6HYn1.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GLORIA%20%281-50..End%29%20-VJ%20SAMMY/GLORIA%20%2850%29..End%20-VJ%20Sammy.mp4"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-11-25T07:30:25.858773+00:00",
+      "vj": "Vj Sammy",
+      "genres": [
+        "Drama"
+      ]
+    },
+    {
+      "name": "Love's Rebellion",
+      "poster_path": "/9NUHQdHv16q0cNFWBAKCJvWzpmg.jpg",
+      "first_air_date": "2024-07-31",
+      "id": 235505,
+      "seasons": [
+        {
+          "episode_count": 36,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/vc1zkPo26ApL6WdOnbU3HDhINYC.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1",
+              "overview": "",
+              "episode_number": 1,
+              "runtime": 36,
+              "still_path": "/hAZs8VAYOrF5AW591egGKgydh06.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.1.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 2",
+              "overview": "",
+              "episode_number": 2,
+              "runtime": 35,
+              "still_path": "/fBgE1zemCrJOrLC3V0UkaWUkTtl.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.2.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 3",
+              "overview": "",
+              "episode_number": 3,
+              "runtime": 49,
+              "still_path": "/fXNjMO3lI8zXsnWAakZ6uJCrBxT.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.3.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 4",
+              "overview": "",
+              "episode_number": 4,
+              "runtime": 36,
+              "still_path": "/fzmVKtDoZPI0Pfm3ci0eCCjnrxF.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.4.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 5",
+              "overview": "",
+              "episode_number": 5,
+              "runtime": 42,
+              "still_path": "/eLkBv1GYEbXHZzhN5DVXbSxQHvv.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.5.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 6",
+              "overview": "",
+              "episode_number": 6,
+              "runtime": 42,
+              "still_path": "/nPzjfgd6NKCADVyf9U7plFt8c2U.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.6.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 7",
+              "overview": "",
+              "episode_number": 7,
+              "runtime": 43,
+              "still_path": "/gm4l8nA3jbPxP2oFd4L6Lo918Qv.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.7.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 8",
+              "overview": "",
+              "episode_number": 8,
+              "runtime": 43,
+              "still_path": "/c3D66HCgWZoXs1GFAXjp37xtB6x.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.8.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 9",
+              "overview": "",
+              "episode_number": 9,
+              "runtime": 44,
+              "still_path": "/7VCtI2JTUSLiBLOy3hGuGKOfo6u.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.9.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 10",
+              "overview": "",
+              "episode_number": 10,
+              "runtime": 45,
+              "still_path": "/nbLF7G0hpCtiap03wPvBUFocXzE.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.10.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 11",
+              "overview": "",
+              "episode_number": 11,
+              "runtime": 39,
+              "still_path": "/jS8AXDKe4Ax5AByysJoyeVPqoMC.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.11.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 12",
+              "overview": "",
+              "episode_number": 12,
+              "runtime": 36,
+              "still_path": "/wwVCrNhWcsjpKJOwQSMFlV4NFT3.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.12.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 13",
+              "overview": "",
+              "episode_number": 13,
+              "runtime": 41,
+              "still_path": "/nUiVBqxTonBnulP1GPJl0VbngwZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.13.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 14",
+              "overview": "",
+              "episode_number": 14,
+              "runtime": 44,
+              "still_path": "/1ntUsTEiEE17wpayo19qCawvAHZ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.14.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 15",
+              "overview": "",
+              "episode_number": 15,
+              "runtime": 38,
+              "still_path": "/h8AwVM6R7iyRruIW7VF2pr8LAk.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.15.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            },
+            {
+              "name": "Episode 16",
+              "overview": "",
+              "episode_number": 16,
+              "runtime": 42,
+              "still_path": "/xP9ql1WQcnxJlBS2tNiPMqBofdK.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/three/Love%E2%80%99s%20Rebellion/EP.16.Love%E2%80%99s%20Rebellion%20vj%20banks.mp4"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-11-25T07:13:48.60728+00:00",
+      "vj": "Vj Banks",
+      "genres": [
+        "Drama",
+        "Sci-Fi & Fantasy"
+      ]
+    },
+    {
+      "name": "Golden Cross",
+      "poster_path": "/uJFb38ba4qL8P4Enb86eFwKNuDL.jpg",
+      "first_air_date": "2014-04-09",
+      "id": 61087,
+      "seasons": [
+        {
+          "episode_count": 20,
+          "name": "Season 1",
+          "overview": "",
+          "season_number": 1,
+          "poster_path": "https://image.tmdb.org/t/p/w500/aJkTMOm1eiM2W1qS7a8qDDa7sgh.jpg",
+          "episodes": [
+            {
+              "name": "Episode 1",
+              "overview": "The day Kang Do Yun is sworn in as a prosecutor, his little sister is murdered. What he doesn't know is how her death ties into the complicated financial deal that threatens the nation's economy and his family's lives.",
+              "episode_number": 1,
+              "runtime": 65,
+              "still_path": "/l2QUeNkZzD1on741q88m14B0fHC.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%281%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 2",
+              "overview": "When the members of Golden Cross become aware of Do Yun's father's involvement to stop the financial deal, they force his hand by coercing him to admit to being his daughter's murderer.",
+              "episode_number": 2,
+              "runtime": 65,
+              "still_path": "/sPXlzty8eRkv0dRYEy3qnSXAi4x.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%282%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 3",
+              "overview": "Dealing with the aftermath of his sister's murder and his father's wrongful imprisonment, Do Yun sets out to find the ones responsible for Ha Yun's death.",
+              "episode_number": 3,
+              "runtime": 65,
+              "still_path": "/5HkzYxRNFwzlEeop1JQKic4YJjg.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%283%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 4",
+              "overview": "The financial deal to sell Hanmin Bank hits its first major roadblock. Do Yun learns that his prosecutor appointment has been delayed and discovers the first clue to find out who is threatening his father.",
+              "episode_number": 4,
+              "runtime": 65,
+              "still_path": "/27dsJ8au1T556QuehKkg4nfBrYE.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%284%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 5",
+              "overview": "Do Yun investigates his father's case further and uncovers why he was fired from the bank.  Do Yun arranges to meet with his father.",
+              "episode_number": 5,
+              "runtime": 65,
+              "still_path": "/1bWwKdA8u3BmZMbEPIRenFmL2NG.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%285%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 6",
+              "overview": "Do Yun hunts those who are trying to silence his father after discovering a revealing photo of Ha Yun's killer. Shocked by the truth of this evidence, Yi Re searches for clues herself.",
+              "episode_number": 6,
+              "runtime": 65,
+              "still_path": "/nY8nOgrdhDoID1fVMXoSQV8nh14.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%286%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 7",
+              "overview": "Yi Re questions her father's involvement in the murder case, and Do Yun dscovers the existence of Golden Cross.",
+              "episode_number": 7,
+              "runtime": 65,
+              "still_path": "/a7TkU6rJPuHmUut1JNBFoitX9BE.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%287%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 8",
+              "overview": "After another mysterious death in another attempt to cover the baddies' tracks, Yi Re and Do Yun team up to re-investigate Ha Yun's murder case.",
+              "episode_number": 8,
+              "runtime": 65,
+              "still_path": "/dA6UnKqijwq6ndpHrt7GBD02Dvr.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%288%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 9",
+              "overview": "Do Yun uses Yi Re's relationship to her father to his advantage and Golden Cross hits a roadblock when their men are found out.",
+              "episode_number": 9,
+              "runtime": 65,
+              "still_path": "/h3Ef8mcOXqN1TI4jxV6inia43KJ.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%289%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 10",
+              "overview": "After more evidence points to Ha Yun's real killer, Yi Re questions Do Yun's true intentions and growing feelings for her.",
+              "episode_number": 10,
+              "runtime": 65,
+              "still_path": "/41R8dLHbn8TxnFTApZOLGXTSzCU.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2810%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 11",
+              "overview": "Do Yun goes to Shinmyung to gather evidence of threat against his father and starts to be conflicted with his intentions to pursue Yi Re.",
+              "episode_number": 11,
+              "runtime": 65,
+              "still_path": "/45wbPkPF7H1fldPI8RiqLW2n80m.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2811%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 12",
+              "overview": "Do Yun gets employed at Hanmin Bank and works for Michael Jang to irritate Chief Seo and Golden Cross. Do Yun's allies warn him about working too closely with the enemy lest he fall for corruption.",
+              "episode_number": 12,
+              "runtime": 65,
+              "still_path": "/xG7pvTWV8JrOysGOgldFdL2lChj.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2812%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 13",
+              "overview": "Golden Cross tries to kill Do Yun which endangers Yi Re's life. Michael decides that he may not need Do Yun much longer.",
+              "episode_number": 13,
+              "runtime": 65,
+              "still_path": "/88OeH5Ui9L3PxInJoRdpJsZdxms.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2813%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 14",
+              "overview": "Golden Cross catches on that Do Yun and Yi Re are working together to reveal the true murderer to the public and decide to stop the press conference at all costs.",
+              "episode_number": 14,
+              "runtime": 65,
+              "still_path": "/oEwe9Rd0jLkz9VG7tGgu1cM4WH6.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2814%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 15",
+              "overview": "When the press conference plan goes awry, Do Yun takes matters into his own hands to find out what happened to Yi Re and his mother.",
+              "episode_number": 15,
+              "runtime": 65,
+              "still_path": "/tSVBkikbzgWNvLzIc7AaCYxQQPF.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2815%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 16",
+              "overview": "Seo Dong Ha and Michael Jang are both in need of an investment when Moneta Fund appears. However, the man who's here to make the deal is someone they never expected.",
+              "episode_number": 16,
+              "runtime": 65,
+              "still_path": "/acjclNDdXsFIMn12MBYwXuGdWDI.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2816%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 17",
+              "overview": "Golden Cross is at unease with Terry Young at Moneta Fund and question his appearance. Furthermore, acquiring funds prove more difficult when a forty year long friendship starts to unravel.",
+              "episode_number": 17,
+              "runtime": 65,
+              "still_path": "/x7TJHQz39lPTRhwmx9OnFGY6gyh.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2817%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 18",
+              "overview": "Seo Dong Ha prepares for his congressional hearing to become the next economic minister. However, his opposition is quickly gathering evidence to reveal the truth to the world.",
+              "episode_number": 18,
+              "runtime": 65,
+              "still_path": "/zhyg7XuiHVDn162ZMELR9HJYIQO.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2818%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 19",
+              "overview": "After exposing Seo Dong Ha's true nature to the public, Kang Do Yun realizes that there are repercussions to facing Seo and Golden Cross head on.",
+              "episode_number": 19,
+              "runtime": 65,
+              "still_path": "/yJpfgkaBK1WPV1nuoA6t0V74LGU.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2819%29%20-VJ%20JEFF.mkv"
+            },
+            {
+              "name": "Episode 20",
+              "overview": "Kang Do Yun pulls out all the stops to bring the corrupt Golden Cross to light and his other enemies, though the attempt claims another casualty.",
+              "episode_number": 20,
+              "runtime": 65,
+              "still_path": "/8dXwh8U20aRV2qVvs9Cy5zkUEzx.jpg",
+              "season_number": 1,
+              "non_translated_url": "",
+              "translated_url": "https://namzentertainments.xyz/projects/ya%20rafi/four/GOLDEN%20CROSS%20%5BKorean%20Detective%5D%20%281-20..End%29%20-VJ%20JEFF/GOLDEN%20CROSS%20%2820%29..End%20-VJ%20JEFF.mkv"
+            }
+          ]
+        }
+      ],
+      "created_at": "2024-11-25T07:08:40.69376+00:00",
+      "vj": "Vj Jeff",
+      "genres": [
+        "Drama",
+        "Family"
+      ]
+    }
+  ],
+  "count": 938
+}

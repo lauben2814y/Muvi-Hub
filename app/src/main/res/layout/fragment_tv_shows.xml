@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvshows_parent_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.TvShowsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tvToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="0dp"
+            app:navigationIcon="@drawable/menu_24px"
+            app:title="Tv shows" />
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/searchBarTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_tvshows" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/searchViewTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/search_tv_shows"
+        app:layout_anchor="@id/searchBarTv">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchTvResultsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="4dp" />
+
+    </com.google.android.material.search.SearchView>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/tvs_nested_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/tvCarouselContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp">
+
+                <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+                    android:id="@+id/tvCarousel"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tvCarouselDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCarouselContainer">
+
+                <TextView
+                    android:id="@+id/tvCarouselPosterName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="4dp"
+                    android:text="Name"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvCarouselPosterName"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/tvCarouselPostertype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/bullet"
+                        android:drawablePadding="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="@string/tv" />
+
+                    <TextView
+                        android:id="@+id/tvCarouselPosterGenres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/bullet"
+                        android:drawablePadding="4dp"
+                        android:paddingHorizontal="12dp"
+                        android:text="Action, Adventure, Comedy" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <GridLayout
+                android:id="@+id/movieCarouselActions"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/tvCarouselDetails"
+                android:layout_marginTop="8dp"
+                android:columnCount="3"
+                android:orientation="horizontal">
+
+                <!-- Your existing GridLayout content -->
+                <LinearLayout
+                    android:id="@+id/tvCarouselActionsLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tvCarouselActionWishList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bookmark_add_24px" />
+
+                    <TextView
+                        android:id="@+id/tvCarouselActionWishListTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wishlist"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/previewTvBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="6"
+                    android:text="@string/preview" />
+
+                <LinearLayout
+                    android:id="@+id/tvCarouselActionsRight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_columnWeight="1"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/tvCarouselActionPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/play_arrow_small" />
+
+                    <TextView
+                        android:id="@+id/tvCarouselActionPlayTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </GridLayout>
+
+            <RelativeLayout
+                android:id="@+id/trailerHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieCarouselActions"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/latest_trailers"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/tvTrailerCarouselPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trailerHeader"
+                android:layout_marginHorizontal="12dp" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/tv_dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTrailerCarouselPager"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                app:dotsColor="@android:color/darker_gray"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="12dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:progressMode="true"
+                app:selectedDotColor="@color/md_theme_primary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mainListRecyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dots_indicator" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:id="@+id/episodeStreamSheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_stream_option"
+        android:id="@+id/title"
+        android:textSize="14sp"
+        android:layout_marginVertical="12dp" />
+
+    <Button
+        android:id="@+id/btn_stream_translated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch Translated"
+        style="@style/CustomButtonStyle"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_stream_non_translated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watch Non Translated"
+        style="@style/CustomButtonStyle"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone" />
+
+</LinearLayout>

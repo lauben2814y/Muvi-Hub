@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:paddingVertical="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/collectionPosterContainer" >
+
+        <RelativeLayout
+            android:layout_width="135dp"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/movieCollectionPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/back"
+                android:scaleType="centerCrop"
+                android:alpha="0.7"/>
+
+            <ImageButton
+                android:id="@+id/pauseBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Toggle play and pause"
+                android:src="@drawable/pause_circle_24px"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_toEndOf="@id/collectionPosterContainer"
+        android:layout_centerVertical="true"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Toggle play and pause"
+            android:src="@drawable/delete_24px"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/movieCollectionTitle"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="After.mp4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23MB of 700MB"
+            android:textSize="12sp"
+            android:id="@+id/movieCollectionType"
+            android:layout_below="@id/movieCollectionTitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateContainer"
+            android:orientation="horizontal"
+            android:layout_below="@id/movieCollectionType">
+
+            <ProgressBar
+                android:id="@+id/downloadProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="20"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/queuedTxt"
+                android:text="Download queued..."
+                android:textColor="@color/md_theme_primary"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/pausedTxt"
+                android:text="Paused"
+                android:textColor="@color/md_theme_primary"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resumingTxt"
+                android:text="Resuming..."
+                android:textColor="@color/md_theme_primary"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/failedTxt"
+                android:text="Download failed"
+                android:textColor="@color/md_theme_error"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:id="@+id/downloadPercentage"
+            android:layout_below="@id/stateContainer"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/networkSpeed"
+            android:layout_below="@id/stateContainer"
+            android:text="1.2MB/s"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

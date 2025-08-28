@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/moviesBtn"
+        android:enabled="true"
+        android:icon="@drawable/movie_24px"
+        android:title="@string/movies" />
+    <item
+        android:id="@+id/tvShowsBtn"
+        android:enabled="true"
+        android:icon="@drawable/tv_24px"
+        android:title="@string/tv_shows" />
+    <item
+        android:id="@+id/downloadsBtn"
+        android:enabled="true"
+        android:icon="@drawable/download_24px"
+        android:title="@string/downloads" />
+    <item
+        android:id="@+id/shortsBtn"
+        android:enabled="true"
+        android:icon="@drawable/play_circle_24px"
+        android:title="Shorts" />
+</menu>

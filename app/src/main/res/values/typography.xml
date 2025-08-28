@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Headline styles -->
+    <style name="CustomTextAppearance.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <!-- Title styles -->
+    <style name="CustomTextAppearance.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <!-- Body styles -->
+    <style name="CustomTextAppearance.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <!-- Labels   -->
+    <style name="CustomTextAppearance.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+    <style name="CustomTextAppearance.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/nunitosemibold</item>
+    </style>
+
+</resources>

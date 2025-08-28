@@ -1,0 +1,179 @@
+{
+  "message": "Data fetched successfully for latest movies",
+  "data": [
+    {
+      "title": "Gladiator II",
+      "id": 558449,
+      "translated": "https://namzentertainments.xyz/project/MUGWANYA/Gladiator%202%20by%20Vj%20Mark.mp4",
+      "non_translated": "",
+      "vj": "Vj Mark",
+      "created_at": "2024-10-22T19:00:41.897703+00:00",
+      "poster_path": "/3d52MgDuO1QNR5oVpBsdQv5JX8.jpg",
+      "release_date": "2024-11-13",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Elevation",
+      "id": 1035048,
+      "translated": "https://munoserver50.club/klpp43/jgn43/Elevation.2024.1080p.WEBRip.x264.AAC5.1-YTS.mp4",
+      "non_translated": "",
+      "vj": "Vj Junior",
+      "created_at": "2024-12-02T15:50:03.628805+00:00",
+      "poster_path": "/uQhYBxOVFU6s9agD49FnGHwJqG5.jpg",
+      "release_date": "2024-11-07",
+      "genres": [
+        "Action",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "72 Hours",
+      "id": 1355266,
+      "translated": "https://storage.kawogomovies.site/NOVEMBER/MOVIES/72%20HOURS.mp4",
+      "non_translated": "",
+      "vj": "Vj ICEP",
+      "created_at": "2024-11-11T19:58:48.681196+00:00",
+      "poster_path": "/xupvHBQ9EJW8em6biZw0khquRh5.jpg",
+      "release_date": "2024-11-01",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "My Super Heroine",
+      "id": 1380356,
+      "translated": "https://storage.kawogomovies.site/DEC/MOVIEs/MY%20SUPER%20HEROINE.mp4",
+      "non_translated": "",
+      "vj": "Vj ICEP",
+      "created_at": "2024-12-02T16:11:38.343555+00:00",
+      "poster_path": "/iCXGcf17popICEjdeJ4BNmtnuVp.jpg",
+      "release_date": "2024-11-01",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Romance"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Bagheera",
+      "id": 777292,
+      "translated": "https://storage.kawogomovies.site/DEC/MOVIEs/BAGHEERA%201.mkv",
+      "non_translated": "",
+      "vj": "Vj ICEP",
+      "created_at": "2024-12-02T16:00:46.743043+00:00",
+      "poster_path": "/6Sx9vGOozrntDzlZnePoHitJakZ.jpg",
+      "release_date": "2024-10-31",
+      "genres": [
+        "Action",
+        "Adventure"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Armor",
+      "id": 1182387,
+      "translated": "https://storage.kawogomovies.site/DEC/MOVIEs/Armor.mp4",
+      "non_translated": "",
+      "vj": "Vj ICEP",
+      "created_at": "2024-11-28T11:48:55.221971+00:00",
+      "poster_path": "/pnXLFioDeftqjlCVlRmXvIdMsdP.jpg",
+      "release_date": "2024-10-30",
+      "genres": [
+        "Action",
+        "Crime",
+        "Thriller"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Time Cut",
+      "id": 827931,
+      "translated": "https://storage.kawogomovies.site/NOVEMBER/MOVIES/TIME%20CUT-VJ%20EMMY.mkv",
+      "non_translated": "",
+      "vj": "Vj Emmy",
+      "created_at": "2024-11-11T06:34:23.250759+00:00",
+      "poster_path": "/gzMFMmpJHOmOFKsAhSDac62Dyg2.jpg",
+      "release_date": "2024-10-29",
+      "genres": [
+        "Horror",
+        "Science Fiction",
+        "Thriller"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Alien Country",
+      "id": 921384,
+      "translated": "https://storage.kawogomovies.site/OCTOBER/MOVIES/ALIEN%20COUNTRY%20VJ%20EMMY.mkv",
+      "non_translated": "",
+      "vj": "Vj Emmy",
+      "created_at": "2024-11-11T19:40:48.982327+00:00",
+      "poster_path": "/qELcpKCX0HMszrWyq25GS2DTK3o.jpg",
+      "release_date": "2024-10-25",
+      "genres": [
+        "Science Fiction",
+        "Horror",
+        "Comedy",
+        "Action"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Don't Move",
+      "id": 1063877,
+      "translated": "https://munoserver52.club/rce43/dec43/Dont.Move.2024.1080p.WEBRip.x264.AAC5.1-YTS.mp4",
+      "non_translated": "",
+      "vj": "Vj Junior",
+      "created_at": "2024-10-27T10:55:04.268164+00:00",
+      "poster_path": "/cRDJxdnRb7ikKd6fVJTrGeaL34v.jpg",
+      "release_date": "2024-10-24",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Family Pack",
+      "id": 1091181,
+      "translated": "https://storage.kawogomovies.site/NOVEMBER/MOVIES/FAMILY%20PACK%20EMMY.mkv",
+      "non_translated": "",
+      "vj": "Vj Emmy",
+      "created_at": "2024-11-11T06:20:08.921839+00:00",
+      "poster_path": "/uL1dR0L65GZgy3h2gvZcxDu0bRG.jpg",
+      "release_date": "2024-10-22",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Fantasy",
+        "Action"
+      ],
+      "category": "movie"
+    },
+    {
+      "title": "Outside",
+      "id": 1306764,
+      "translated": "https://storage.kawogomovies.site/OCTOBER/MOVIES/Outside.2024.1080p.Vj%20Kali.mkv",
+      "non_translated": "",
+      "vj": "Vj Kali",
+      "created_at": "2024-10-27T10:57:12.784693+00:00",
+      "poster_path": "/sIdczpaO0XXBe6OEIL8NbWMqQrO.jpg",
+      "release_date": "2024-10-17",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "category": "movie"
+    }
+  ],
+  "count": 1495
+}

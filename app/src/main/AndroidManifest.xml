@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- Storage permissions -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- For Android 13 and above -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".MuviHub"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MuviHub"
+        tools:targetApi="31">
+        <activity
+            android:name=".pages.AppUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ShortsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pages.ProfileActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".managers.DownloadService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync">
+            <intent-filter>
+                <action android:name=" muvi.anime.hub.PAUSE_DOWNLOAD" />
+                <action android:name="muvi.anime.hub.RESUME_DOWNLOAD" />
+                <action android:name="muvi.anime.hub.CANCEL_DOWNLOAD" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".pages.DummyDetails"
+            android:exported="false"
+            android:theme="@style/Theme.MuviHub" />
+        <activity
+            android:name=".pages.LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".pages.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PlayerTv"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".pages.PlayerMovie"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".pages.TrailerDetails"
+            android:exported="false" />
+        <activity
+            android:name=".pages.Library"
+            android:exported="false" />
+        <activity
+            android:name=".pages.FilterTv"
+            android:exported="false" />
+        <activity
+            android:name=".pages.Filter"
+            android:exported="false" />
+        <activity
+            android:name=".LauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2115223186894781~3348299908" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/gma_ad_services_config"
+            tools:replace="android:resource" />
+
+        <activity
+            android:name=".pages.TvMore"
+            android:exported="false" />
+        <activity
+            android:name=".pages.MovieMore"
+            android:exported="false" />
+        <activity
+            android:name=".pages.TvDetails"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".pages.MovieDetails"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <service
+            android:name=".fcm.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".fcm.NotificationActionReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

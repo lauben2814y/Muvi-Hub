@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/library_btn"
+        android:icon="@drawable/video_library_24px"
+        android:title="@string/library"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/group_btn"
+        android:icon="@drawable/chat_bubble_24px"
+        android:title="@string/join_community"
+        android:checkable="true" />
+</menu>
