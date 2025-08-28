@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
         initializeUpdateSystem();
 
         // Check for updates automatically (after a delay to not interfere with app startup)
-        mainHandler.postDelayed(this::checkForUpdatesAutomatically, 3000);
+         mainHandler.postDelayed(this::checkForUpdatesAutomatically, 3000);
 
         toggleSections(this, bottomNavigationView);
     }
@@ -568,7 +568,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkForUpdatesAutomatically() {
-        if (UpdateConfig.DEBUG_UPDATES) {
+        Log.d(TAG, "Is debug Mode" + UpdateConfig.DEBUG_UPDATES);
+
+        if (!UpdateConfig.DEBUG_UPDATES) {
             Log.d(TAG, "Starting automatic update check...");
         }
 
@@ -578,21 +580,15 @@ public class MainActivity extends AppCompatActivity {
             public void onUpdateAvailable(RetrofitUpdateChecker.UpdateInfo updateInfo) {
                 updatePreferences.setLastCheckTime(System.currentTimeMillis());
 
-                // Check if user already dismissed this version
-                if (updateInfo.versionCode <= updatePreferences.getDismissedVersionCode()) {
-                    if (UpdateConfig.DEBUG_UPDATES) {
-                        Log.d(TAG, "Update available but user dismissed this version: " + updateInfo.versionCode);
-                    }
-                    return;
-                }
-
                 if (UpdateConfig.DEBUG_UPDATES) {
+                    // We're in debug mode — log only
                     Log.d(TAG, "Update available: " + updateInfo.versionName +
                             " (force: " + updateInfo.forceUpdate + ")");
+                } else {
+                    // We're in production — show the update dialog
+                    showUpdateDialog(updateInfo);
                 }
 
-                // Show update dialog
-                showUpdateDialog(updateInfo);
             }
 
             @Override

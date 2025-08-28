@@ -1,5 +1,7 @@
 package muvi.anime.hub.managers.update;
 
+import muvi.anime.hub.BuildConfig;
+
 public class UpdateConfig {
     // Your backend configuration
     public static final String BACKEND_URL = "https://muvihub-update.heroware.xyz/";
@@ -17,7 +19,7 @@ public class UpdateConfig {
     public static final String FILE_PROVIDER_AUTHORITY = PACKAGE_NAME + ".fileprovider";
 
     // Debug settings
-    public static final boolean DEBUG_UPDATES = true; // Set to false for production
+    public static final boolean DEBUG_UPDATES = BuildConfig.DEBUG;
 
     // User-Agent for API calls
     public static final String USER_AGENT = "MuviHub-Android/1.0";
