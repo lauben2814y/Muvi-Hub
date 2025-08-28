@@ -131,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
         statsManager = new UserStatsManager(context);
         userManager = UserManager.getInstance(this);
 
-
         // Initialize the coordinator which handles consent and ad loading
         AdManagerCoordinator adManagerCoordinator = new AdManagerCoordinator(this);
         adManagerCoordinator.initialize(this); // Pass activity context here

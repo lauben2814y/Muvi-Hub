@@ -283,7 +283,6 @@ class LogIn : AppCompatActivity() {
                         // Navigate immediately after dismissing dialog
                         if (!isFinishing && !isDestroyed) {
                             startActivity(Intent(this@LogIn, MainActivity::class.java))
-                            overridePendingTransition(0, 0) // Remove animation
                             finish()
                         }
                     }, 2000)
