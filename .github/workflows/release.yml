@@ -1,16 +1,26 @@
 name: Build and Release APK
 
 on:
+  workflow_dispatch:  # Allows manual trigger
   push:
     tags:
       - 'v*'  # Matches any tag starting with 'v'
-  workflow_dispatch:  # Allows manual trigger
+
+# Important: Add permissions for the GITHUB_TOKEN
+permissions:
+  contents: write  # Needed to create releases
+  actions: read    # Needed to read workflow info
 
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
     
     steps:
+    - name: Echo tag info
+      run: |
+        echo "Triggered by tag: ${{ github.ref }}"
+        echo "Repository: ${{ github.repository }}"
+    
     - name: Checkout code
       uses: actions/checkout@v4
     
@@ -52,65 +62,64 @@ jobs:
     - name: Get version from tag
       id: get_version
       run: |
-        VERSION=${GITHUB_REF#refs/tags/}
+        if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+          VERSION=${GITHUB_REF#refs/tags/}
+        else
+          VERSION="manual-$(date +'%Y%m%d-%H%M%S')"
+        fi
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "VERSION_NAME=${VERSION#v}" >> $GITHUB_OUTPUT
+        echo "Detected version: $VERSION"
     
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Release (Modern Approach)
+      uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ steps.get_version.outputs.VERSION }}
-        release_name: "Release ${{ steps.get_version.outputs.VERSION }}"
+        name: "Muvi Hub ${{ steps.get_version.outputs.VERSION }}"
         draft: false
         prerelease: false
+        generate_release_notes: true  # Auto-generate release notes from commits
         body: |
-          ## 🎉 What's New in ${{ steps.get_version.outputs.VERSION_NAME }}
+          ## 🎬 Muvi Hub ${{ steps.get_version.outputs.VERSION_NAME }}
           
-          ### ✨ New Features
-          - Add your new features here
+          ### ✨ What's New
+          - Enhanced movie streaming experience
+          - Improved update system with Material 3 design
+          - Better security with APK verification
           
           ### 🐛 Bug Fixes
-          - List your bug fixes here
+          - Fixed various stability issues
+          - Improved streaming reliability
           
           ### 🔧 Improvements
           - Performance optimizations
           - UI/UX improvements
+          - Better network handling
           
           ### 📱 Installation
           Download the APK below and install manually on your Android device.
           
           **Minimum Android Version:** 7.0 (API 24)
-          **Target Android Version:** 14 (API 34)
           
           ### 🔒 Security
-          This APK is signed with our official certificate. Verify the signature matches previous versions.
+          This APK is signed with our official certificate.
           
           ---
-          
-          **Release Notes:**
-          - Force Update: false
-          - Security Critical: false
-          - Minimum Version: 1.0.0
-    
-    - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
+          **Force Update:** false  
+          **Security Critical:** false  
+          **Minimum Version:** 1.0.0
+        files: |
+          ${{ steps.sign_app.outputs.signedReleaseFile }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ${{ steps.sign_app.outputs.signedReleaseFile }}
-        asset_name: MyApp-${{ steps.get_version.outputs.VERSION }}.apk
-        asset_content_type: application/vnd.android.package-archive
     
-    - name: Notify Backend (Optional)
-      run: |
-        curl -X POST "https://your-backend-url.com/api/v1/update/webhook" \
-          -H "Content-Type: application/json" \
-          -d '{
-            "action": "release_created",
-            "tag_name": "${{ steps.get_version.outputs.VERSION }}",
-            "download_url": "https://github.com/${{ github.repository }}/releases/download/${{ steps.get_version.outputs.VERSION }}/MyApp-${{ steps.get_version.outputs.VERSION }}.apk"
-          }' || true
+    - name: Upload Additional Assets (Optional)
+      uses: softprops/action-gh-release@v1
+      if: steps.sign_app.outputs.signedReleaseFile != ''
+      with:
+        tag_name: ${{ steps.get_version.outputs.VERSION }}
+        files: |
+          ${{ steps.sign_app.outputs.signedReleaseFile }}
+        file_glob: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
