@@ -63,7 +63,12 @@ import muvi.anime.hub.managers.NavigationManager;
 import muvi.anime.hub.managers.DownloadService;
 import muvi.anime.hub.managers.SyncDialog;
 import muvi.anime.hub.managers.UserManager;
+import muvi.anime.hub.managers.update.NetworkUtils;
+import muvi.anime.hub.managers.update.RetrofitUpdateChecker;
+import muvi.anime.hub.managers.update.UpdateConfig;
+import muvi.anime.hub.managers.update.UpdatePreferences;
 import muvi.anime.hub.models.User;
+import muvi.anime.hub.pages.AppUpdateActivity;
 import muvi.anime.hub.pages.DownloadsFragment;
 import muvi.anime.hub.pages.Library;
 import muvi.anime.hub.pages.LogIn;
@@ -82,8 +87,6 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private final Context context = this;
-    private AppUpdateManager appUpdateManager;
-    private static final int UPDATE_REQUEST_CODE = 100;
     private DrawerLayout drawerLayout;
     private SecureService movieService;
     private SecureService tvService;
@@ -106,6 +109,13 @@ public class MainActivity extends AppCompatActivity {
     private Handler adCheckHandler;
     private Runnable adCheckRunnable;
     private boolean isActivityVisible = false;
+
+    private static final String TAG = "MainActivity";
+
+    // Add these fields to your existing MainActivity fields
+    private RetrofitUpdateChecker updateChecker;
+    private UpdatePreferences updatePreferences;
+    private Handler mainHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -173,46 +183,15 @@ public class MainActivity extends AppCompatActivity {
         watchAmount = header.findViewById(R.id.watch_amount);
         downloadAmount = header.findViewById(R.id.download_amount);
 
-        // Initialize the AppUpdateManager with the new library
-        appUpdateManager = AppUpdateManagerFactory.create(getApplicationContext());
-
         checkForUpdates();
 
+        // Initialize update system
+        initializeUpdateSystem();
+
+        // Check for updates automatically (after a delay to not interfere with app startup)
+        mainHandler.postDelayed(this::checkForUpdatesAutomatically, 3000);
+
         toggleSections(this, bottomNavigationView);
-    }
-
-    private void initializeUserManager() {
-        User currentUser = userManager.getCurrentUser();
-        if (currentUser == null) {
-            SyncDialog syncDialog = new SyncDialog(this);
-
-            syncDialog.setOnRetryCallback(() -> {
-                initializeUserManager();
-                return null;
-            });
-
-            syncDialog.show();
-            syncDialog.setDialogPositionPercentage(0.25f); // 25% from top
-
-            userManager.getOrCreateUser(mAuth.getCurrentUser(), new UserManager.UserCallback() {
-                @Override
-                public void onSuccess(User user) {
-                    syncDialog.updateStatus(
-                            SyncDialog.SyncStatus.SUCCESS,
-                            "User sync success, " + userManager.getUserEmail()
-                    );
-
-                    // Wait a bit to show success, then dismiss and navigate
-                    // do something after success
-                    new Handler(Looper.getMainLooper()).postDelayed(syncDialog::dismiss, 2000); // 2 second delay
-                }
-
-                @Override
-                public void onError(String error) {
-
-                }
-            });
-        }
     }
 
     private void setupAdCheckHandler() {
@@ -574,6 +553,101 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkForUpdates() {
 
+    }
+
+    private void initializeUpdateSystem() {
+        updateChecker = new RetrofitUpdateChecker(this);
+        updatePreferences = new UpdatePreferences(this);
+        mainHandler = new Handler(Looper.getMainLooper());
+
+        if (UpdateConfig.DEBUG_UPDATES) {
+            Log.d(TAG, "Update system initialized for Muvi Hub");
+            Log.d(TAG, "Backend URL: " + UpdateConfig.BACKEND_URL);
+            Log.d(TAG, "GitHub: " + UpdateConfig.GITHUB_OWNER + "/" + UpdateConfig.GITHUB_REPO);
+        }
+    }
+
+    private void checkForUpdatesAutomatically() {
+        if (UpdateConfig.DEBUG_UPDATES) {
+            Log.d(TAG, "Starting automatic update check...");
+        }
+
+        // Perform silent update check
+        updateChecker.checkForUpdate(new RetrofitUpdateChecker.UpdateCheckCallback() {
+            @Override
+            public void onUpdateAvailable(RetrofitUpdateChecker.UpdateInfo updateInfo) {
+                updatePreferences.setLastCheckTime(System.currentTimeMillis());
+
+                // Check if user already dismissed this version
+                if (updateInfo.versionCode <= updatePreferences.getDismissedVersionCode()) {
+                    if (UpdateConfig.DEBUG_UPDATES) {
+                        Log.d(TAG, "Update available but user dismissed this version: " + updateInfo.versionCode);
+                    }
+                    return;
+                }
+
+                if (UpdateConfig.DEBUG_UPDATES) {
+                    Log.d(TAG, "Update available: " + updateInfo.versionName +
+                            " (force: " + updateInfo.forceUpdate + ")");
+                }
+
+                // Show update dialog
+                showUpdateDialog(updateInfo);
+            }
+
+            @Override
+            public void onNoUpdateAvailable() {
+                updatePreferences.setLastCheckTime(System.currentTimeMillis());
+
+                if (UpdateConfig.DEBUG_UPDATES) {
+                    Log.d(TAG, "No update available - Muvi Hub is up to date");
+                }
+            }
+
+            @Override
+            public void onError(String error) {
+                if (UpdateConfig.DEBUG_UPDATES) {
+                    Log.e(TAG, "Update check failed: " + error);
+                }
+                // Don't show error to user for automatic checks
+            }
+        });
+    }
+
+    // Method to manually check for updates (can be called from settings, menu, etc.)
+    public void checkForUpdatesManually() {
+        Toast.makeText(this, "Checking for updates...", Toast.LENGTH_SHORT).show();
+
+        updateChecker.checkForUpdate(new RetrofitUpdateChecker.UpdateCheckCallback() {
+            @Override
+            public void onUpdateAvailable(RetrofitUpdateChecker.UpdateInfo updateInfo) {
+                showUpdateDialog(updateInfo);
+            }
+
+            @Override
+            public void onNoUpdateAvailable() {
+                Toast.makeText(MainActivity.this, "You're using the latest version of Muvi Hub!",
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError(String error) {
+                Toast.makeText(MainActivity.this, "Failed to check for updates: " + error,
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    private void showUpdateDialog(RetrofitUpdateChecker.UpdateInfo updateInfo) {
+        Intent intent = new Intent(this, AppUpdateActivity.class);
+        intent.putExtra("new_version_name", updateInfo.versionName);
+        intent.putExtra("new_version_code", updateInfo.versionCode);
+        intent.putExtra("download_url", updateInfo.downloadUrl);
+        intent.putExtra("changelog", updateInfo.changelog);
+        intent.putExtra("force_update", updateInfo.forceUpdate);
+        intent.putExtra("file_size", updateInfo.fileSize);
+        intent.putExtra("file_checksum", updateInfo.fileChecksum);
+        startActivity(intent);
     }
 
     // ======================================= IN APP UPDATE ======================================= //

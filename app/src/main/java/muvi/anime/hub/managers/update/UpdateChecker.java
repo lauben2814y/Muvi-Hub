@@ -1,4 +1,4 @@
-package muvi.anime.hub.managers;
+package muvi.anime.hub.managers.update;
 
 import android.content.Context;
 import android.content.Intent;

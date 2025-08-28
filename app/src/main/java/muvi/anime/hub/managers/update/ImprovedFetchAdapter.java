@@ -1,7 +1,10 @@
-package muvi.anime.hub.adapters;
+package muvi.anime.hub.managers.update;
 
 import android.content.Context;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+
 import com.tonyodev.fetch2.Fetch;
 import com.tonyodev.fetch2.FetchListener;
 import com.tonyodev.fetch2.Download;
@@ -12,20 +15,14 @@ import java.io.File;
 import java.util.List;
 
 import muvi.anime.hub.managers.FetchSingleton;
-import muvi.anime.hub.pages.AppUpdateActivity;
 
-/**
- * Improved adapter that works with your existing FetchSingleton
- * and filters only update-related downloads
- */
 public class ImprovedFetchAdapter {
-
     private static final String TAG = "ImprovedFetchAdapter";
-    private static final String UPDATE_TAG = "APP_UPDATE";
+    private static final String UPDATE_TAG = "MUVI_HUB_UPDATE";
 
-    private Context context;
+    private final Context context;
     private Fetch fetch;
-    private AppUpdateActivity.DownloadProgressCallback progressCallback;
+    private DownloadProgressCallback progressCallback;
     private int currentDownloadId = -1;
 
     public ImprovedFetchAdapter(Context context) {
@@ -34,12 +31,15 @@ public class ImprovedFetchAdapter {
     }
 
     private void initializeFetch() {
-        // Use your existing FetchSingleton
         fetch = FetchSingleton.getFetchInstance(context);
         fetch.addListener(fetchListener);
+
+        if (UpdateConfig.DEBUG_UPDATES) {
+            Log.d(TAG, "ImprovedFetchAdapter initialized with FetchSingleton");
+        }
     }
 
-    public void setProgressCallback(AppUpdateActivity.DownloadProgressCallback callback) {
+    public void setProgressCallback(DownloadProgressCallback callback) {
         this.progressCallback = callback;
     }
 
@@ -48,19 +48,39 @@ public class ImprovedFetchAdapter {
             // Create updates directory
             File updatesDir = new File(context.getExternalFilesDir(null), "updates");
             if (!updatesDir.exists()) {
-                updatesDir.mkdirs();
+                boolean created = updatesDir.mkdirs();
+                if (UpdateConfig.DEBUG_UPDATES) {
+                    Log.d(TAG, "Created updates directory: " + created);
+                }
             }
 
             String filePath = updatesDir.getAbsolutePath() + File.separator + fileName;
 
-            // Create download request with special tag for updates
+            if (UpdateConfig.DEBUG_UPDATES) {
+                Log.d(TAG, "Starting download: " + downloadUrl);
+                Log.d(TAG, "Saving to: " + filePath);
+            }
+
+            // Create download request with proper headers for GitHub
             Request request = new Request(downloadUrl, filePath);
             request.setPriority(com.tonyodev.fetch2.Priority.HIGH);
             request.setNetworkType(com.tonyodev.fetch2.NetworkType.ALL);
-            request.addHeader("User-Agent", "AppUpdater/1.0");
 
-            // Add a tag to identify this as an update download
+            // Add headers that GitHub expects
+            request.addHeader("User-Agent", UpdateConfig.USER_AGENT);
+            request.addHeader("Accept", "application/octet-stream");
+            request.addHeader("Accept-Encoding", "identity"); // Prevent compression issues
+
+            // For GitHub releases, we might need to handle redirects properly
+            // The browser_download_url from GitHub API should work directly
+
+            // Add tag to identify as update download
             request.setTag(UPDATE_TAG);
+
+            if (UpdateConfig.DEBUG_UPDATES) {
+                Log.d(TAG, "Request headers: User-Agent=" + UpdateConfig.USER_AGENT);
+                Log.d(TAG, "Request URL: " + downloadUrl);
+            }
 
             // Start download
             fetch.enqueue(request, updatedRequest -> {
@@ -73,7 +93,7 @@ public class ImprovedFetchAdapter {
             }, error -> {
                 Log.e(TAG, "Failed to enqueue update download: " + error.toString());
                 if (progressCallback != null) {
-                    progressCallback.onError("Failed to start download: " + error.toString());
+                    progressCallback.onError("Failed to start download: " + getErrorMessage(error));
                 }
             });
 
@@ -87,6 +107,9 @@ public class ImprovedFetchAdapter {
 
     public void cancelDownload() {
         if (currentDownloadId != -1) {
+            if (UpdateConfig.DEBUG_UPDATES) {
+                Log.d(TAG, "Cancelling download: " + currentDownloadId);
+            }
             fetch.cancel(currentDownloadId);
             currentDownloadId = -1;
         }
@@ -99,10 +122,7 @@ public class ImprovedFetchAdapter {
     public void cleanup() {
         if (fetch != null) {
             fetch.removeListener(fetchListener);
-            // Don't close the fetch instance since it's a singleton
         }
-
-        // Clean up any completed update downloads to save space
         cleanupOldUpdateFiles();
     }
 
@@ -117,7 +137,9 @@ public class ImprovedFetchAdapter {
                         // Delete files older than 7 days
                         if (currentTime - file.lastModified() > (7 * 24 * 60 * 60 * 1000)) {
                             boolean deleted = file.delete();
-                            Log.d(TAG, "Cleaned up old update file: " + file.getName() + " - " + deleted);
+                            if (UpdateConfig.DEBUG_UPDATES) {
+                                Log.d(TAG, "Cleaned up old update file: " + file.getName() + " - " + deleted);
+                            }
                         }
                     }
                 }
@@ -129,16 +151,18 @@ public class ImprovedFetchAdapter {
 
     private final FetchListener fetchListener = new FetchListener() {
         @Override
-        public void onAdded(Download download) {
-            if (isUpdateDownload(download)) {
+        public void onAdded(@NonNull Download download) {
+            if (isUpdateDownload(download) && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download added: " + download.getUrl());
             }
         }
 
         @Override
-        public void onQueued(Download download, boolean waitingOnNetwork) {
+        public void onQueued(@NonNull Download download, boolean waitingOnNetwork) {
             if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
-                Log.d(TAG, "Update download queued: " + download.getId());
+                if (UpdateConfig.DEBUG_UPDATES) {
+                    Log.d(TAG, "Update download queued: " + download.getId());
+                }
                 if (progressCallback != null) {
                     progressCallback.onProgress(0, 0, download.getTotal());
                 }
@@ -146,14 +170,14 @@ public class ImprovedFetchAdapter {
         }
 
         @Override
-        public void onWaitingNetwork(Download download) {
-            if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
+        public void onWaitingNetwork(@NonNull Download download) {
+            if (isUpdateDownload(download) && download.getId() == currentDownloadId && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download waiting for network: " + download.getId());
             }
         }
 
         @Override
-        public void onCompleted(Download download) {
+        public void onCompleted(@NonNull Download download) {
             if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
                 Log.d(TAG, "Update download completed: " + download.getFile());
                 currentDownloadId = -1;
@@ -166,9 +190,9 @@ public class ImprovedFetchAdapter {
         }
 
         @Override
-        public void onError(Download download, Error error, Throwable throwable) {
+        public void onError(@NonNull Download download, @NonNull Error error, Throwable throwable) {
             if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
-                Log.e(TAG, "Update download error: " + error.toString(), throwable);
+                Log.e(TAG, "Update download error: " + error, throwable);
                 currentDownloadId = -1;
 
                 if (progressCallback != null) {
@@ -178,19 +202,19 @@ public class ImprovedFetchAdapter {
         }
 
         @Override
-        public void onDownloadBlockUpdated(Download download, DownloadBlock downloadBlock, int totalBlocks) {
-            // Optional: Handle block updates if needed for update downloads only
+        public void onDownloadBlockUpdated(@NonNull Download download, @NonNull DownloadBlock downloadBlock, int totalBlocks) {
+            // Optional: Handle block updates
         }
 
         @Override
-        public void onStarted(Download download, List<? extends DownloadBlock> downloadBlocks, int totalBlocks) {
-            if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
+        public void onStarted(@NonNull Download download, @NonNull List<? extends DownloadBlock> downloadBlocks, int totalBlocks) {
+            if (isUpdateDownload(download) && download.getId() == currentDownloadId && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download started: " + download.getId());
             }
         }
 
         @Override
-        public void onProgress(Download download, long etaInMilliSeconds, long downloadedBytesPerSecond) {
+        public void onProgress(@NonNull Download download, long etaInMilliSeconds, long downloadedBytesPerSecond) {
             if (isUpdateDownload(download) && download.getId() == currentDownloadId && progressCallback != null) {
                 long downloaded = download.getDownloaded();
                 long total = download.getTotal();
@@ -201,23 +225,25 @@ public class ImprovedFetchAdapter {
         }
 
         @Override
-        public void onPaused(Download download) {
-            if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
+        public void onPaused(@NonNull Download download) {
+            if (isUpdateDownload(download) && download.getId() == currentDownloadId && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download paused: " + download.getId());
             }
         }
 
         @Override
-        public void onResumed(Download download) {
-            if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
+        public void onResumed(@NonNull Download download) {
+            if (isUpdateDownload(download) && download.getId() == currentDownloadId && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download resumed: " + download.getId());
             }
         }
 
         @Override
-        public void onCancelled(Download download) {
+        public void onCancelled(@NonNull Download download) {
             if (isUpdateDownload(download) && download.getId() == currentDownloadId) {
-                Log.d(TAG, "Update download cancelled: " + download.getId());
+                if (UpdateConfig.DEBUG_UPDATES) {
+                    Log.d(TAG, "Update download cancelled: " + download.getId());
+                }
                 currentDownloadId = -1;
 
                 if (progressCallback != null) {
@@ -227,46 +253,49 @@ public class ImprovedFetchAdapter {
         }
 
         @Override
-        public void onRemoved(Download download) {
-            if (isUpdateDownload(download)) {
+        public void onRemoved(@NonNull Download download) {
+            if (isUpdateDownload(download) && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download removed: " + download.getId());
             }
         }
 
         @Override
-        public void onDeleted(Download download) {
-            if (isUpdateDownload(download)) {
+        public void onDeleted(@NonNull Download download) {
+            if (isUpdateDownload(download) && UpdateConfig.DEBUG_UPDATES) {
                 Log.d(TAG, "Update download deleted: " + download.getId());
             }
         }
     };
 
-    /**
-     * Check if this download is an update download by checking the tag
-     */
     private boolean isUpdateDownload(Download download) {
         return UPDATE_TAG.equals(download.getTag());
     }
 
     /**
-     * Convert Fetch error to user-friendly message
+     * Enhanced error message handling for GitHub downloads
      */
     private String getErrorMessage(Error error) {
-        switch (error) {
-            case NO_NETWORK_CONNECTION:
-                return "No internet connection. Please check your network and try again.";
-            case HTTP_NOT_FOUND:
-                return "Update file not found on server.";
-            case WRITE_PERMISSION_DENIED:
-                return "Storage permission denied. Please grant storage permission.";
-            case NO_STORAGE_SPACE:
-                return "Not enough storage space available.";
-            case UNKNOWN_HOST:
-                return "Cannot connect to update server. Please try again later.";
-            case CONNECTION_TIMED_OUT:
-                return "Connection timed out. Please try again.";
-            default:
-                return "Download failed: " + error.toString();
-        }
+        return switch (error) {
+            case REQUEST_NOT_SUCCESSFUL ->
+                    "GitHub download failed. This may be due to rate limiting or authentication issues.";
+            case NO_NETWORK_CONNECTION ->
+                    "No internet connection. Please check your network and try again.";
+            case HTTP_NOT_FOUND ->
+                    "Update file not found on GitHub. The release may have been removed.";
+            case WRITE_PERMISSION_DENIED ->
+                    "Storage permission denied. Please grant storage permission.";
+            case NO_STORAGE_SPACE -> "Not enough storage space available.";
+            case UNKNOWN_HOST -> "Cannot connect to GitHub. Please try again later.";
+            case CONNECTION_TIMED_OUT ->
+                    "Connection timed out. Please check your internet connection.";
+            default ->
+                    "Download failed: " + error + ". Try again or download manually from GitHub.";
+        };
+    }
+
+    public interface DownloadProgressCallback {
+        void onProgress(int progress, long downloadedBytes, long totalBytes);
+        void onSuccess(File file);
+        void onError(String error);
     }
 }

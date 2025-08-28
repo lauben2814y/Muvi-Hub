@@ -1,5 +1,6 @@
 package muvi.anime.hub.pages;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,16 +10,18 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import muvi.anime.hub.R;
-import muvi.anime.hub.adapters.ImprovedFetchAdapter;
+import muvi.anime.hub.managers.update.ImprovedFetchAdapter;
+import muvi.anime.hub.managers.update.NetworkUtils;
+import muvi.anime.hub.managers.update.UpdateConfig;
+import muvi.anime.hub.managers.update.UpdatePreferences;
+import muvi.anime.hub.managers.update.UpdateSecurityUtils;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
 
 import com.google.android.material.button.MaterialButton;
@@ -44,6 +47,9 @@ public class AppUpdateActivity extends AppCompatActivity {
     private String newVersionName;
     private int newVersionCode;
     private String changeLog;
+    private boolean forceUpdate;
+    private long fileSize;
+    private String fileChecksum;
     private File downloadedApk;
 
     // Your fetch downloader instance
@@ -88,7 +94,7 @@ public class AppUpdateActivity extends AppCompatActivity {
         fetchDownloader = new ImprovedFetchAdapter(this);
 
         // Set up progress callback
-        fetchDownloader.setProgressCallback(new DownloadProgressCallback() {
+        fetchDownloader.setProgressCallback(new ImprovedFetchAdapter.DownloadProgressCallback() {
             @Override
             public void onProgress(int progress, long downloadedBytes, long totalBytes) {
                 runOnUiThread(() -> updateProgress(progress, downloadedBytes, totalBytes));
@@ -107,12 +113,15 @@ public class AppUpdateActivity extends AppCompatActivity {
     }
 
     private void loadUpdateInfo() {
-        // Get update info from intent or your update checker
+        // Get update info from intent
         Intent intent = getIntent();
         newVersionName = intent.getStringExtra("new_version_name");
         newVersionCode = intent.getIntExtra("new_version_code", 0);
         downloadUrl = intent.getStringExtra("download_url");
         changeLog = intent.getStringExtra("changelog");
+        forceUpdate = intent.getBooleanExtra("force_update", false);
+        fileSize = intent.getLongExtra("file_size", 0);
+        fileChecksum = intent.getStringExtra("file_checksum");
 
         // Set current version
         try {
@@ -126,27 +135,58 @@ public class AppUpdateActivity extends AppCompatActivity {
         // Set new version info
         tvNewVersion.setText("Available: v" + newVersionName);
         tvChangeLog.setText(changeLog != null ? changeLog : "Bug fixes and improvements");
+
+        // Handle force update
+        if (forceUpdate) {
+            btnCancel.setText("Exit App");
+        }
     }
 
     private void setupClickListeners() {
         btnUpdate.setOnClickListener(v -> startUpdate());
+
         btnCancel.setOnClickListener(v -> {
             if (fetchDownloader.isDownloading()) {
                 fetchDownloader.cancelDownload();
             }
-            finish();
+
+            if (forceUpdate) {
+                // Force update - exit the app
+                finishAffinity();
+            } else {
+                // Regular update - dismiss and remember user choice
+                UpdatePreferences prefs = new UpdatePreferences(this);
+                prefs.setDismissedVersionCode(newVersionCode);
+                finish();
+            }
         });
+
         btnInstall.setOnClickListener(v -> installApk());
     }
 
     private void startUpdate() {
+        // Check network conditions
+        UpdatePreferences prefs = new UpdatePreferences(this);
+        if (!NetworkUtils.shouldAllowDownload(this, prefs)) {
+            String networkType = NetworkUtils.getNetworkType(this);
+            if ("None".equals(networkType)) {
+                Toast.makeText(this, "No internet connection available", Toast.LENGTH_LONG).show();
+                return;
+            }
+//            else if (prefs.isWifiOnlyEnabled() && !"WiFi".equals(networkType)) {
+//                Toast.makeText(this, "WiFi required for downloads. Check your settings.",
+//                        Toast.LENGTH_LONG).show();
+//                return;
+//            }
+        }
+
         // Show progress UI
         cardProgress.setVisibility(View.VISIBLE);
         btnUpdate.setEnabled(false);
         tvDownloadStatus.setText("Preparing download...");
 
         // Start download using your fetch downloader
-        String fileName = "app_update_v" + newVersionName + ".apk";
+        String fileName = "MuviHub_v" + newVersionName + ".apk";
         fetchDownloader.startDownload(downloadUrl, fileName);
     }
 
@@ -160,21 +200,33 @@ public class AppUpdateActivity extends AppCompatActivity {
         tvDownloadStatus.setText(String.format("Downloading... %s MB / %s MB", downloadedMB, totalMB));
 
         // Update button text
-        btnCancel.setText("Cancel");
+        btnCancel.setText(forceUpdate ? "Exit App" : "Cancel");
     }
 
+    @SuppressLint("SetTextI18n")
     private void onDownloadSuccess(File file) {
         downloadedApk = file;
+
+        // Verify APK security
+        UpdateSecurityUtils.SecurityVerificationResult securityResult =
+                UpdateSecurityUtils.verifyApkSecurity(this, file, fileChecksum, fileSize);
+
+        if (!securityResult.overallValid) {
+            onDownloadError("Security verification failed: " + securityResult.error);
+            // Delete potentially unsafe file
+            file.delete();
+            return;
+        }
 
         // Update UI for successful download
         progressIndicator.setProgress(100);
         tvProgressText.setText("100%");
-        tvDownloadStatus.setText("Download completed successfully!");
+        tvDownloadStatus.setText("Download completed and verified!");
 
         // Show install button
         btnInstall.setVisibility(View.VISIBLE);
         btnUpdate.setText("Download Complete");
-        btnCancel.setText("Close");
+        btnCancel.setText(forceUpdate ? "Exit App" : "Close");
 
         // Haptic feedback
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -183,6 +235,7 @@ public class AppUpdateActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private void onDownloadError(String error) {
         // Update UI for download error
         tvDownloadStatus.setText("Download failed: " + error);
@@ -192,7 +245,7 @@ public class AppUpdateActivity extends AppCompatActivity {
         // Reset buttons
         btnUpdate.setEnabled(true);
         btnUpdate.setText("Retry Download");
-        btnCancel.setText("Close");
+        btnCancel.setText(forceUpdate ? "Exit App" : "Close");
 
         Toast.makeText(this, "Download failed. Please try again.", Toast.LENGTH_LONG).show();
     }
@@ -209,7 +262,7 @@ public class AppUpdateActivity extends AppCompatActivity {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 // Use FileProvider for Android 7.0+
                 Uri apkUri = FileProvider.getUriForFile(this,
-                        getPackageName() + ".fileprovider", downloadedApk);
+                        UpdateConfig.FILE_PROVIDER_AUTHORITY, downloadedApk);
                 intent.setDataAndType(apkUri, "application/vnd.android.package-archive");
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             } else {
@@ -220,10 +273,25 @@ public class AppUpdateActivity extends AppCompatActivity {
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
 
+            // Close the update activity
+            finish();
+
         } catch (Exception e) {
             Toast.makeText(this, "Cannot install APK: " + e.getMessage(),
                     Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (forceUpdate && !btnInstall.isShown()) {
+            // Force update and download not complete - don't allow back
+            Toast.makeText(this, "This update is required to continue using Muvi Hub",
+                    Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        super.onBackPressed();
     }
 
     @Override
@@ -232,14 +300,5 @@ public class AppUpdateActivity extends AppCompatActivity {
         if (fetchDownloader != null) {
             fetchDownloader.cleanup();
         }
-    }
-
-    // Interface for your fetch downloader callbacks
-    public interface DownloadProgressCallback {
-        void onProgress(int progress, long downloadedBytes, long totalBytes);
-
-        void onSuccess(File file);
-
-        void onError(String error);
     }
 }
