@@ -37,7 +37,7 @@ jobs:
       uses: android-actions/setup-android@v3
     
     - name: Cache Gradle packages
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           ~/.gradle/caches
@@ -84,7 +84,7 @@ jobs:
     
     # Only create/update release if it was triggered by tag (not by release creation)
     - name: Create or Update Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       if: github.event_name != 'release'  # Don't create if triggered by release creation
       with:
         tag_name: ${{ steps.get_version.outputs.VERSION }}
@@ -112,7 +112,7 @@ jobs:
     
     # If triggered by release creation, just upload the APK to existing release
     - name: Upload APK to Existing Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       if: github.event_name == 'release'  # Only upload if triggered by release creation
       with:
         tag_name: ${{ github.event.release.tag_name }}
@@ -124,7 +124,7 @@ jobs:
     
     - name: Upload Artifact for Manual Builds
       if: github.event_name == 'workflow_dispatch'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: signed-apk-${{ steps.get_version.outputs.VERSION }}
         path: ${{ steps.sign_app.outputs.signedReleaseFile }}
