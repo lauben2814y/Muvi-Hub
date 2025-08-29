@@ -1,112 +1,130 @@
 name: Build and Release APK
+
 on:
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:  # Allows manual trigger
   push:
     tags:
-      - "v*" # Matches any tag starting with 'v'
+      - 'v*'  # Matches any tag starting with 'v'
+  release:
+    types: [created, published]  # Trigger when release is created in GitHub UI
 
 # Important: Add permissions for the GITHUB_TOKEN
 permissions:
-  contents: write # Needed to create releases
-  actions: read # Needed to read workflow info
+  contents: write  # Needed to create releases and upload assets
+  actions: read    # Needed to read workflow info
 
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Echo tag info
-        run: |
-          echo "Triggered by tag: ${{ github.ref }}"
-          echo "Repository: ${{ github.repository }}"
-
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          java-version: "17"
-          distribution: "temurin"
-
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Cache Gradle packages
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-
-      - name: Make gradlew executable
-        run: chmod +x gradlew
-
-      - name: Build Release APK
-        run: ./gradlew assembleRelease
-
-      - name: Sign APK
-        uses: r0adkll/sign-android-release@v1
-        id: sign_app
-        with:
-          releaseDirectory: app/build/outputs/apk/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY_BASE64 }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
-        env:
-          BUILD_TOOLS_VERSION: "34.0.0"
-
-      - name: Get version from tag
-        id: get_version
-        run: |
-          if [[ "${{ github.ref }}" == refs/tags/* ]]; then
-            VERSION=${GITHUB_REF#refs/tags/}
-          else
-            VERSION="manual-$(date +'%Y%m%d-%H%M%S')"
-          fi
-          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-          echo "VERSION_NAME=${VERSION#v}" >> $GITHUB_OUTPUT
-          echo "Detected version: $VERSION"
-
-      - name: Create Release (Modern Approach)
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ steps.get_version.outputs.VERSION }}
-          name: "Muvi Hub ${{ steps.get_version.outputs.VERSION }}"
-          draft: false
-          prerelease: false
-          generate_release_notes: true # Auto-generate release notes from commits
-          body: |
-            ## 🎬 Muvi Hub ${{ steps.get_version.outputs.VERSION_NAME }}
-
-            ### ✨ What's New
-            - Enhanced movie streaming experience
-            - Improved update system with Material 3 design
-            - Better security with APK verification
-
-            ### 📱 Installation
-            Download the APK below and install manually on your Android device.
-
-            **Minimum Android Version:** 7.0 (API 24)
-
-            ---
-            **Force Update:** false  
-            **Security Critical:** false  
-            **Minimum Version:** 1.0.0
-          files: |
-            ${{ steps.sign_app.outputs.signedReleaseFile }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload Additional Assets (Optional)
-        uses: softprops/action-gh-release@v1
-        if: steps.sign_app.outputs.signedReleaseFile != ''
-        with:
-          tag_name: ${{ steps.get_version.outputs.VERSION }}
-          files: |
-            ${{ steps.sign_app.outputs.signedReleaseFile }}
-          file_glob: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Echo trigger info
+      run: |
+        echo "Triggered by: ${{ github.event_name }}"
+        echo "Ref: ${{ github.ref }}"
+        echo "Repository: ${{ github.repository }}"
+    
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+    
+    - name: Cache Gradle packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+    
+    - name: Make gradlew executable
+      run: chmod +x gradlew
+    
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
+    
+    - name: Sign APK
+      uses: r0adkll/sign-android-release@v1
+      id: sign_app
+      with:
+        releaseDirectory: app/build/outputs/apk/release
+        signingKeyBase64: ${{ secrets.SIGNING_KEY_BASE64 }}
+        alias: ${{ secrets.ALIAS }}
+        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        keyPassword: ${{ secrets.KEY_PASSWORD }}
+      env:
+        BUILD_TOOLS_VERSION: "34.0.0"
+    
+    - name: Get version from tag or release
+      id: get_version
+      run: |
+        if [[ "${{ github.event_name }}" == "release" ]]; then
+          # Triggered by release creation - use release info
+          VERSION="${{ github.event.release.tag_name }}"
+          echo "Using release tag: $VERSION"
+        elif [[ "${{ github.ref }}" == refs/tags/* ]]; then
+          # Triggered by tag push
+          VERSION=${GITHUB_REF#refs/tags/}
+          echo "Using pushed tag: $VERSION"
+        else
+          # Manual trigger
+          VERSION="manual-$(date +'%Y%m%d-%H%M%S')"
+          echo "Using manual version: $VERSION"
+        fi
+        echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+        echo "VERSION_NAME=${VERSION#v}" >> $GITHUB_OUTPUT
+        echo "Final version: $VERSION"
+    
+    # Only create/update release if it was triggered by tag (not by release creation)
+    - name: Create or Update Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name != 'release'  # Don't create if triggered by release creation
+      with:
+        tag_name: ${{ steps.get_version.outputs.VERSION }}
+        name: "Muvi Hub ${{ steps.get_version.outputs.VERSION }}"
+        draft: false
+        prerelease: false
+        generate_release_notes: true  # Auto-generate from commits if no body provided
+        body: |
+          ## 🎬 Muvi Hub ${{ steps.get_version.outputs.VERSION_NAME }}
+          
+          ### 📱 Installation
+          Download the APK below and install manually on your Android device.
+          
+          **Minimum Android Version:** 7.0 (API 24)
+          
+          ### 🔒 Security
+          This APK is signed with our official certificate.
+          
+          ---
+          **Note:** Add your custom release notes by editing this release after creation.
+        files: |
+          ${{ steps.sign_app.outputs.signedReleaseFile }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    # If triggered by release creation, just upload the APK to existing release
+    - name: Upload APK to Existing Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'  # Only upload if triggered by release creation
+      with:
+        tag_name: ${{ github.event.release.tag_name }}
+        files: |
+          ${{ steps.sign_app.outputs.signedReleaseFile }}
+        # Don't modify the release body - keep what user wrote in GitHub UI
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Upload Artifact for Manual Builds
+      if: github.event_name == 'workflow_dispatch'
+      uses: actions/upload-artifact@v3
+      with:
+        name: signed-apk-${{ steps.get_version.outputs.VERSION }}
+        path: ${{ steps.sign_app.outputs.signedReleaseFile }}
