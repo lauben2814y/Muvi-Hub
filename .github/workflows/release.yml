@@ -70,55 +70,13 @@ jobs:
         echo "VERSION_NAME=${VERSION#v}" >> $GITHUB_OUTPUT
         echo "Detected version: $VERSION"
     
-    - name: Create Release (Modern Approach)
+    # This step just uploads the APK to the existing release
+    - name: Upload APK to Existing Release
       uses: softprops/action-gh-release@v1
-      with:
-        tag_name: ${{ steps.get_version.outputs.VERSION }}
-        name: "Muvi Hub ${{ steps.get_version.outputs.VERSION }}"
-        draft: false
-        prerelease: false
-        generate_release_notes: true  # Auto-generate release notes from commits
-        body: |
-          ## 🎬 Muvi Hub ${{ steps.get_version.outputs.VERSION_NAME }}
-          
-          ### ✨ What's New
-          - Enhanced movie streaming experience
-          - Improved update system with Material 3 design
-          - Better security with APK verification
-          
-          ### 🐛 Bug Fixes
-          - Fixed various stability issues
-          - Improved streaming reliability
-          
-          ### 🔧 Improvements
-          - Performance optimizations
-          - UI/UX improvements
-          - Better network handling
-          
-          ### 📱 Installation
-          Download the APK below and install manually on your Android device.
-          
-          **Minimum Android Version:** 7.0 (API 24)
-          
-          ### 🔒 Security
-          This APK is signed with our official certificate.
-          
-          ---
-          **Force Update:** false  
-          **Security Critical:** false  
-          **Minimum Version:** 1.0.0
-        files: |
-          ${{ steps.sign_app.outputs.signedReleaseFile }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-    - name: Upload Additional Assets (Optional)
-      uses: softprops/action-gh-release@v1
-      if: steps.sign_app.outputs.signedReleaseFile != ''
       with:
         tag_name: ${{ steps.get_version.outputs.VERSION }}
         files: |
           ${{ steps.sign_app.outputs.signedReleaseFile }}
-        file_glob: true
+        # Don't specify name, body, etc. - use what's already in the release
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
